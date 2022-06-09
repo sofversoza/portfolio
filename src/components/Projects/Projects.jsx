@@ -22,12 +22,12 @@ function Projects() {
       
       <div className="projects">
         <div>
-          <video className="mbm-vid" src={mbm} width="950" height="auto" loop autoPlay muted>
+          <video className="mbm-vid grow" src={mbm} width="650" height="auto" loop autoPlay muted>
           </video>
         </div>
         <br />
         <div>
-          <img className="dreamspace" src={dreamspace} width="950" height="auto" />
+          <img className="dreamspace grow" src={dreamspace} width="650" height="auto" />
         </div>
       </div>
       
