@@ -1,0 +1,74 @@
+.object-cont img {
+    object-fit: contain;
+    object-position: top center;
+    position: absolute;
+    right: 27%;
+    max-width: 73%;
+    z-index: 0;
+}
+
+.statue-cont img {
+    object-fit: contain;
+    object-position: top center;
+    position: relative;
+    max-width: 73%;
+    z-index: 1;
+}
+
+.intro p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 67vw;
+    top: 23%;
+}
+
+.intro h3 {
+    font-size: 1.1vw;
+    line-height: 1.5;
+    position: absolute;
+    left: 67vw;
+    top: 38%;
+    color: #4351B8;
+}
+
+.marquee-cont {
+    white-space: nowrap;
+    height: 100%;
+    margin-top: -11%;
+}
+
+.marquee {
+   z-index: 0!important;
+}
+
+.marquee span {
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+
+/* FADE IN ANIMATION STARTS */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    50% {
+      transform: translate(0);
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+.appear {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    /* without this once the elements appear ( fadeIn ) they will go away this makes sure the end state stays the same */
+    animation-fill-mode: forwards;
+}
+/* FADE IN ANIMATION ENDS */

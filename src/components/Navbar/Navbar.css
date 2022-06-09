@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Anabele';
+    src: url('../../assets/Anabele.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 1%;
+}
+
+/* NAME LOGO */
+.logo {
+    color: white;
+    font-family: 'Anabele', sans-serif;
+    font-size: 3vw;
+    cursor: pointer;
+    justify-self: start;
+    position: absolute;
+    left: 5vw!important;
+    letter-spacing: 0.1em!important;
+    line-height: 1.2em!important;
+}
+
+/* ENVELOPE */
+.envelope-cont {
+    position: absolute;
+    height: 80px;
+    width: 70px;
+    right: 5vw;
+    cursor: pointer;
+}
+
+.envelope-cont .envelope {
+    position: absolute;
+    top: 14px;
+    height: 51px;
+    width: 70px;
+    border: 1px solid #fff;
+    border-radius: 3%;
+    transition: margin-top 300ms;
+    -ms-transition: margin-top 300ms;
+    -moz-transition: margin-top 300ms;
+    -o-transition: margin-top 300ms;
+    -webkit-transition: margin-top 300ms;
+    background: #FFF;
+}
+
+.envelope-cont .envelope .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 33px;
+    z-index: 30;
+    overflow: hidden;
+    transform-origin: top;
+    -ms-transform-origin: top;
+    -moz-transform-origin: top;
+    -o-transform-origin: top;
+    -webkit-transform-origin: top;
+    transition: transform 300ms 150ms,z-index 0ms 150ms,height 300ms 0ms,top 300ms 0ms;
+    -ms-transition: -ms-transform 300ms 150ms,z-index 0ms 150ms,height 300ms 0ms,top 300ms 0ms;
+    -moz-transition: -moz-transform 300ms 150ms,z-index 0ms 150ms,height 300ms 0ms,top 300ms 0ms;
+    -o-transition: -o-transform 300ms 150ms,z-index 0ms 150ms,height 300ms 0ms,top 300ms 0ms;
+    -webkit-transition: -webkit-transform 300ms 150ms,z-index 0ms 150ms,height 300ms 0ms,top 300ms 0ms;
+}
+
+.envelope-cont .envelope .outer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 34px solid white;
+}
+
+.envelope-cont .envelope .outer .inner {
+    position: absolute;
+    left: -32px;
+    top: -33px;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-top: 32px solid pink;
+}
+
+.envelope-cont .envelope .bottom {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-bottom: 23px solid pink;
+    ;
+}
+
+.envelope-cont .envelope .left {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    border-left: 35px solid pink;
+    border-top: 25px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.envelope-cont .envelope .right {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    border-right: 35px solid pink;
+    border-top: 25px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.envelope-cont .envelope .letter {
+    position: absolute;
+    height: 47px;
+    padding-top: 0;
+    width: 64px;
+    margin-left: 1px;
+    top: 0;
+    left: 0;
+    background: #F9F9F9;
+    z-index: 3;
+    transition: margin-top 300ms 0ms;
+    -ms-transition: margin-top 300ms 0ms;
+    -moz-transition: margin-top 300ms 0ms;
+    -o-transition: margin-top 300ms 0ms;
+    -webkit-transition: margin-top 300ms 0ms;
+}
+
+.envelope-cont .envelope .letter .email {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 2px 0 0 0;
+    text-align: center;
+    color: #0045ED!important;
+    text-decoration: none;
+    transition: color 200ms;
+    -ms-transition: color 200ms;
+    -moz-transition: color 200ms;
+    -o-transition: color 200ms;
+    -webkit-transition: color 200ms;
+    font-size: 14px!important;
+    letter-spacing: -0.5px!important;
+    line-height: 13px!important;
+    font-weight: 600!important;
+    font-variation-settings: 'wght' 600;
+}
+
+.letter {
+    position: absolute;
+    background-color: #fff;
+    width: 230px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    transition: .2s;
+}
+
+  
+.letter:before {
+    position: absolute;
+    background-color: #333;
+    width: 80px;
+    height: 80px;
+    top: 75px;
+    left: 75px;
+}
+  
+.letter:after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    top: 82px;
+    left: 82px;
+}
+
+.email {
+    text-align: center;
+    font-size: 17px;
+    font-family: arial;
+    margin-top:20px;
+    overflow: hidden;
+}
+  
+.email:before, .email:after {
+    position: absolute;
+    width: 0px;
+    border-radius: 10px;
+    background-color: #333;
+    height: 20px;
+    top: 60px;
+}
+  
+.email:before {
+    left: 108px;
+    transform: rotate(-25deg);
+}
+  
+.email:after {
+    left: 118px;
+    transform: rotate(25deg);
+}
+  
+.envelope:hover .top {
+    transform: rotateX(160deg);
+}
+  
+.envelope:hover .letter {
+    transform: translateY(-100px);
+    z-index: 3;
+}
+
+.envelope-cont:hover .envelope .letter {
+    margin-top: -31px;
+    transition: margin-top 300ms 150ms;
+    -ms-transition: margin-top 300ms 150ms;
+    -moz-transition: margin-top 300ms 150ms;
+    -o-transition: margin-top 300ms 150ms;
+    -webkit-transition: margin-top 300ms 150ms;
+}
