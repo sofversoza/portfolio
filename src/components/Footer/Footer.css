@@ -1,0 +1,136 @@
+.footer {
+    height: 100vh;
+    position: relative;
+}
+
+.marquee-work-cont {
+    white-space: nowrap;
+}
+
+.marquee-work span {
+    -webkit-text-stroke: 1.5px white;
+    color: transparent;
+    font-size: 15vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 2vh;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 8px, 0);
+    }
+}
+
+.copyright {
+    font-size: 1.5vh;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    margin-top: 10vh;
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+
+.slide-up {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    margin-top: 10vh;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+    position: relative;
+    top: 15vh;
+}
+
+.info h2 {
+    font-size: 2vh;
+    cursor: pointer;
+    line-height: 3.5vh;
+}
+
+.social-icons {
+    overflow: hidden;
+    max-width: 50vw;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    width: 10vh;
+    height: 10vh;
+    background-color: pink;
+    text-align: center;
+    line-height: 11.5vh;
+    font-size: 5vh;
+    margin: 1vh;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+ul li a:hover .icon {
+    color: pink;
+    transform: rotateY(360deg);
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+  
+ul li a:hover:before {
+    top: 0;
+}
+
+ul li:nth-child(1) a:before{
+    background: black;
+}
+
+ul li:nth-child(2) a:before{
+    background: darkgray;
+}
+
+ul li:nth-child(3) a:before {
+    background: black;
+}
+
+ul li:nth-child(4) a:before {
+    background: #0077b5;
+}

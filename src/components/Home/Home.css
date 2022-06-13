@@ -1,35 +1,41 @@
+.home-cont {
+    max-height: 100vh;
+    position: relative;
+}
+
 .object-cont img {
     object-fit: contain;
-    object-position: top center;
     position: absolute;
-    right: 27%;
-    max-width: 73%;
+    max-width: 70%;
     z-index: 0;
+    margin-top: 1.5%;
 }
 
 .statue-cont img {
     object-fit: contain;
     object-position: top center;
     position: relative;
-    max-width: 73%;
+    max-width: 43%;
+    left: 19%;
+    margin-top: 3%;
     z-index: 1;
+}
+
+.intro {
+    position: absolute;
+    right: 3.5%;
+    top: 18%;
 }
 
 .intro p {
     font-size: 1.5vw;
     line-height: 1.5;
     letter-spacing: 0.5px;
-    position: absolute;
-    left: 67vw;
-    top: 23%;
 }
 
 .intro h3 {
-    font-size: 1.1vw;
-    line-height: 1.5;
-    position: absolute;
-    left: 67vw;
-    top: 38%;
+    font-size: 1.2vw;
+    line-height: 1.1;
     color: #4351B8;
 }
 
@@ -72,3 +78,22 @@
     animation-fill-mode: forwards;
 }
 /* FADE IN ANIMATION ENDS */
+
+/* SHAKE ON HOVER EFFECT STARTS */
+/* SHAKING OBJECT TWEAKING POSITION */
+/* .statue-img {
+    transform: translate(-3px, -3px);
+} */
+
+/* SHAKING OBJECT ANIMATE ON HOVER */
+/* @keyframes shake-statue-img {
+    0% { transform: translate(-8px, -14px); }
+    33% { transform: translate(-10px, -14px); }
+    66% { transform: translate(-10px, -16px); }
+    100% { transform: translate(-8px, -16px); }
+}
+
+.statue-cont:hover {
+    animation: shake-statue-img .5s infinite alternate;
+} */
+/* SHAKE ON HOVER EFFECT ENDS */

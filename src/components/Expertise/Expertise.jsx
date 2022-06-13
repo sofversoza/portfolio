@@ -3,14 +3,13 @@ import './Expertise.css'
 import swirl from '../../assets/swirl-pink.png'
 
 function Expertise() {
-  
   return (
-    <div className="container">
+    <div className="expertise-cont">
       <div className="expertise">
-        <div className="expertise-col">
+        <div className="items title">
           <h1>EXPERTISE</h1>
         </div>
-        <div className="expertise-text">
+        <div className="items text">
           <h2>WEB DESIGN</h2>
           <h2>WEB DEVELOPMENT</h2>
           <h2>ART DIRECTION</h2>
@@ -19,9 +18,9 @@ function Expertise() {
           <h2>CREATIVE WRITING</h2>
         </div>
       </div>
-      <div>
+      {/* <div className="swirl-cont">
         <img src={swirl} className="swirl" />
-      </div>
+      </div> */}
     </div>
   )
 }
