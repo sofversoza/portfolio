@@ -4,29 +4,20 @@ import './Navbar.css'
 function Navbar() {
   return (
     <div className="navbar">
-        <h1 className="logo">
-            SOFIA VERSOZA
-            {/* <br />
-            VERSOZA */}
-        </h1>
-
+        <div className="name-cont">
+            <p className="name name1">SOFIA VERSOZA</p>
+            <p className="name name2">SOFIA VERSOZA</p>
+        </div>
         <div className="envelope-cont">
-            <div className="envelope">
-            <div className="top">
-                <div className="outer">
-                    <div className="inner"></div>
-                </div>
-            </div> 
-                <div className="bottom"></div>
-                <div className="left"></div>
-                <div className="right"></div>
-                <div className="letter">
-                    <div className="email" href="mailto:sofversoza@gmail.com">
-                        sofversoza
-                        <br />
-                        @gmail.com
-                    </div>
-                </div>  
+            <div class="envelope">
+              <div class="back"></div>
+              <div class="letter">
+                <div class="text1">SOFVERSOZA</div>
+                <div class="text2">@GMAIL.COM</div>
+                <div class="text3">٩(˘◡˘)۶</div>
+              </div>
+              <div class="front"></div>
+              <div class="top"></div>
             </div>
         </div>
     </div> 

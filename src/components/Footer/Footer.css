@@ -45,18 +45,22 @@
     margin-top: 10vh;
     font-size: 2.5vh;
     cursor: pointer;
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
 }
 
 .info {
     text-align: center;
     position: relative;
-    top: 15vh;
+    top: 15vw;
 }
 
 .info h2 {
-    font-size: 2vh;
+    font-size: 1.3vw;
     cursor: pointer;
-    line-height: 3.5vh;
+    line-height: 1.8vw;
 }
 
 .social-icons {

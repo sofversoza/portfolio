@@ -39,6 +39,22 @@
     color: #4351B8;
 }
 
+.globe {
+    animation: bouncey 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncey {
+    from {
+        transform: translate3d(0, -5px, 0);
+    }
+    to {
+        transform: translate3d(0, 3px, 0);
+    }
+}
+
 .marquee-cont {
     white-space: nowrap;
     height: 100%;

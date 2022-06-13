@@ -43,7 +43,6 @@ function Footer() {
             </li>
           </ul>
         </div>
-
         <div className="info">
           <h2>
            RESUME
@@ -52,11 +51,9 @@ function Footer() {
            SEND ME AN EMAIL
           </h2>
         </div>
-
         <h3 className="copyright">
           © Sofia Versoza — 2022
         </h3>
-
         <BsArrowUp className="slide-up" />
     </div>
   )

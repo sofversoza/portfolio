@@ -25,7 +25,10 @@ function Home() {
                 <br />
             </p>                
             <h3>
-                <BsGlobe style={{verticalAlign:'top', fill:'#4351B8'}} size="1.3vw" /> &nbsp;AVAILABLE FOR REMOTE WORK
+                <BsGlobe 
+                    style={{verticalAlign:'top', fill:'#4351B8'}} 
+                    size="1.3vw" 
+                    className="globe" /> &nbsp;AVAILABLE FOR REMOTE WORK
             </h3>
         </div>
         <div className="marquee-cont">
