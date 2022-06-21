@@ -1,26 +1,86 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Expertise.css'
-import swirl from '../../assets/swirl-pink.png'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 function Expertise() {
+  const animate = useAnimation();
+  const {ref, inView} = useInView({
+    threshold: 0.2
+  });
+
+  useEffect(() => {
+    if(inView) {
+      animate.start('show')
+    }
+    if(!inView) {
+      animate.start('hidden')
+    }
+  }, [inView]);
+
+  const textContainer = {
+    hidden: { x:'100vw' },
+    show: {
+      x:0,
+      transition: {
+        type:'spring', 
+        mass: 2,
+        damping: 10,
+        stiffness: 65,
+        when: 'beforeChildren',
+        staggerChildren: 0.5
+      }
+    }
+  }
+
+  const title = {
+    hidden: { x:'-100vw' },
+    show: { 
+      x: 0,
+      transition: { 
+        delay: 0.5, 
+        duration: 2
+      } 
+    }
+  }
+  
+  const textItem = {
+    hidden: { x: '100vw' },
+    show: { x: 0 }
+  }
+  
+  const hover = { 
+    color:'#4351B8',
+    scale: 1.1,
+    transition: {
+      duration: 1.3,
+      yoyo: 10
+    }
+  }
+
   return (
-    <div className="expertise-cont">
-      <div className="expertise">
-        <div className="items title">
+    <div ref={ref} className="expertise-cont">
+      <div ref={ref} className="expertise">
+        <motion.div className="items title"
+          variants={title}
+          initial='hidden'
+          animate={animate}
+        >
           <h1>EXPERTISE</h1>
-        </div>
-        <div className="items text">
-          <h2>WEB DESIGN</h2>
-          <h2>WEB DEVELOPMENT</h2>
-          <h2>ART DIRECTION</h2>
-          <h2>BRAND IDENTITY</h2>
-          <h2>CONCEPT & CURATION</h2>
-          <h2>CREATIVE WRITING</h2>
-        </div>
+        </motion.div>
+        <motion.div ref={ref} className="items text" 
+          variants={textContainer}
+          initial='hidden'
+          animate={animate}
+        >
+          <motion.h2 variants={textItem} whileHover={hover}>WEB DESIGN</motion.h2>
+          <motion.h2 variants={textItem} whileHover={hover}>WEB DEVELOPMENT</motion.h2>
+          <motion.h2 variants={textItem} whileHover={hover}>ART DIRECTION</motion.h2>
+          <motion.h2 variants={textItem} whileHover={hover}>BRAND IDENTITY</motion.h2>
+          <motion.h2 variants={textItem} whileHover={hover}>CONCEPT & CURATION</motion.h2>
+          <motion.h2 variants={textItem} whileHover={hover}>CREATIVE WRITING</motion.h2>
+        </motion.div>
       </div>
-      {/* <div className="swirl-cont">
-        <img src={swirl} className="swirl" />
-      </div> */}
     </div>
   )
 }

@@ -11,6 +11,7 @@
     align-items: center;
     display: flex;
     padding-top: 1vw;
+    overflow: hidden;
 }
 
 /* NAME LOGO */
@@ -43,10 +44,10 @@
 
 /* ENVELOPE */
 .envelope-cont {
-    position: fixed;
+    position: fixed!important;
     right: 4%;
     top: 5.7%;
-    z-index: 1;
+    z-index: 2!important;
 }
 
 .envelope {
@@ -76,11 +77,19 @@
 
 .text1 {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     font-family: arial;
-    margin-top: 7px;
+    margin-top: 4px;
     font-weight: bold;
     color: #46322E;
+    letter-spacing: -0.5px;
+}
+
+.text1 span {
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    color: rgb(122, 20, 20);
 }
 
 .text2 {
@@ -89,15 +98,16 @@
     font-family: arial;
     font-weight: bold;
     color: #46322E;
+    letter-spacing: -0.5px;
 }
 
 .text3 {
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     font-family: arial;
     font-weight: bold;
     color: #46322E;
-    margin-top: 2px;
+    letter-spacing: -0.5px;
 }
 
 .front {

@@ -1,6 +1,7 @@
 .expertise-cont {
   max-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .expertise {
@@ -21,13 +22,12 @@
 .title {
   font-size: 1.3vw;
   letter-spacing: 0.1vw;
-  /* z-index: 1; */
 }
 
 .text {
   font-size: 0.9vw;
   line-height: 3em;
-  /* z-index: 1; */
+  cursor: default;
 }
 
 /* .swirl-cont {

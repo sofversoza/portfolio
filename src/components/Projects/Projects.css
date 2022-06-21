@@ -1,5 +1,6 @@
 .projects-cont {
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .marquee-projects-cont {
