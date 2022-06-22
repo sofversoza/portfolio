@@ -13,6 +13,19 @@ body {
   background: #271916;
 }
 
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: .02;
+  z-index: 1500;
+  pointer-events: none;
+  background: url(./assets/noise.gif);
+}
+
 
 /* REACT LOGO SPIN ANIMATION */
 /* @media (prefers-reduced-motion: no-preference) {

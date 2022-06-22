@@ -24,7 +24,7 @@ function Expertise() {
       x:0,
       transition: {
         type:'spring', 
-        mass: 2,
+        mass: 1.5,
         damping: 10,
         stiffness: 65,
         when: 'beforeChildren',

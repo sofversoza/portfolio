@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Bubbles';
+    src: url('../../assets/BubblesRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KC-Anva-Hell';
+    src: url('../../assets/KC-Anva-Hell.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonkegRegular';
+    src: url('../../assets/MonkegRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KC-Liquid';
+    src: url('../../assets/KC-Liquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.loader-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* .texts {
+  position: absolute;
+} */
+
+.welcome1 {
+  font-size: 24px;
+  font-family: 'MonkegRegular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;   
+}
+
+/* .welcome2 {
+  font-size: 26px;
+  font-family: 'KC-Anva-Hell', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;   
+}
+
+.welcome3 {
+  font-size: 27px;
+  font-family: 'Bubbles', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-top: 2.5px;   
+}
+
+.welcome4 {
+    font-size: 24px;
+    font-family: 'Council', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.3px;   
+    margin-bottom: 5px;
+}
+
+.welcome5 {
+    font-size: 24px;
+    font-family: 'KC-Liquid', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;   
+    margin-top: 2.5px;
+} */

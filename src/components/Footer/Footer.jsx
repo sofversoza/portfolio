@@ -129,7 +129,7 @@ function Footer() {
           animate={animate}
         >
           <motion.h2 variants={eachInfoVariant} whileHover='hover'>RESUME</motion.h2>
-          <motion.h2 variants={eachInfoVariant} whileHover='hover'>SEND ME AN EMAIL</motion.h2>
+          <motion.h2 variants={eachInfoVariant} whileHover='hover'>CONTACT ME</motion.h2>
         </motion.div>
         <h3 className="copyright">
           © Sofia Versoza — 2022

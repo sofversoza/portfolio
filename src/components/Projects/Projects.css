@@ -55,3 +55,27 @@
     transform: scale(1.4);
 }
 /* HOVER GROW EFFECT END */
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  height: 10rem;
+}
+
+.card img {
+  mix-blend-mode: luminosity;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.sticky {
+  margin-left: 10%;
+  background-color: white;
+  z-index: 0;
+}
+
+.parallax {
+  margin-right: 15%;
+}

@@ -17,13 +17,14 @@
 /* NAME LOGO */
 .name {
     color: white;
-    font-family: 'Gravhez', sans-serif;
-    font-size: 3.5vw;
+    /* font-family: 'Gravhez', sans-serif; */
+    font-family: 'MonkegRegular', sans-serif;
+    font-size: 3.7vw;
     cursor: pointer;
     position: absolute;
-    left: 5vw!important;
-    letter-spacing: 0.1em!important;
+    left: 5.5vw!important;
     transition: 2s ease;
+    margin-top: -5px!important;
 }
 
 /* Giving shapes to names using clip-path*/
