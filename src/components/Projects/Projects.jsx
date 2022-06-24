@@ -2,52 +2,47 @@ import React from 'react'
 import './Projects.css'
 import mbmlogo from '../../assets/MonBeauMonde.png'
 import mbm from '../../assets/MBM-recording.mov'
+import mbm2 from '../../assets/mbm2.mov'
 import dreamspace from '../../assets/dreamspace.png'
 import Marquee from "react-fast-marquee"
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { AiFillCodeSandboxCircle, AiFillGithub } from 'react-icons/ai'
 
 
 function Projects() {
   return (
     <div className="projects-cont">
-      <div className="web-works">
-        <div className="marquee-projects-cont">
-            <div className="marquee-project">
-                <Marquee 
-                speed={90}
-                gradient={false}
-                >
-                  <span className="title">WEB WORKS &nbsp;</span>
-                  <span className="title-outline">WEB WORKS &nbsp;</span>
-                </Marquee>
-            </div>
+      <div className="marquee-projects-cont">
+        <div className="marquee-project">
+            <Marquee 
+            speed={90}
+            gradient={false}
+            >
+              <span className="title">WEB WORKS &nbsp;</span>
+              <span className="title-outline">WEB WORKS &nbsp;</span>
+            </Marquee>
         </div>
-      
-        <div className="projects">
-          <div className="proj-item item-1">
-            <video className="mbm-vid grow" src={mbm} width="570" height="auto" loop autoPlay muted>
-            </video>
-          </div>
-
-          <div className="proj-item item-2">
-            <img className="dreamspace grow" src={dreamspace} width="570" height="305" />
+      </div>
+      <div className="flex-cont">
+        <div className="card firstProj">
+          <video className="mbm-vid" src={mbm2} width="590" height="auto" loop autoPlay muted></video>
+          <div className="info-cont">
+            <p className="project-name">MON BEAU MONDE MUSEUM</p>
+            <div className="links-cont">
+              <AiFillGithub size="22px" style={{ verticalAlign:'top' }} />&nbsp;&nbsp;
+              <AiFillCodeSandboxCircle size="22px" style={{ verticalAlign:'top' }} />
+            </div>
           </div>
         </div>
-
-        {/* <Parallax pages={4}>
-         <ParallaxLayer offset={1} speed={1.5} sticky={{ start: 1, end: 3 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
-           <div className='card sticky'>
-            <img src={mbmlogo} height="140" width="400"/>
-           </div>
-          </ParallaxLayer> 
-
-          <ParallaxLayer offset={1.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-            <div className="parallax card">
-              <video className="mbm-vid grow" src={mbm} width="570" height="auto" loop autoPlay muted>
-              </video>
+        <div className="card secondProj">
+          <img className="dreamspace" src={dreamspace} width="590" height="324" />
+          <div className="info-cont">
+            <p className="project-name">DREAMSPACE</p>
+            <div className="links-cont">
+              <AiFillGithub size="22px" style={{ verticalAlign:'top' }} />&nbsp;&nbsp;
+              <AiFillCodeSandboxCircle size="22px" style={{ verticalAlign:'top' }} />
             </div>
-          </ParallaxLayer>
-        </Parallax> */}
+          </div>
+        </div>
       </div>
     </div>
   )

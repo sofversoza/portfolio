@@ -1,6 +1,6 @@
 .projects-cont {
     min-height: 100vh;
-    overflow: hidden;
+    overflow: wrap;
 }
 
 .marquee-projects-cont {
@@ -9,11 +9,10 @@
 }
 
 .marquee-project span {
-    -webkit-text-stroke: 1.5px white;
+    -webkit-text-stroke: 1.5px #B18E85!important;
     color: transparent;
     font-size: 15vh;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'MonkegRegular', sans-serif;
     letter-spacing: 3px;
     word-spacing: 2vh;
 }
@@ -21,61 +20,48 @@
 .title-outline {
     -webkit-text-stroke: 0!important;
     color: #B18E85!important;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'MonkegRegular', sans-serif;
     font-weight: 700;
 }
 
-.projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 80vh;
-}
-
-.proj-item {
-    margin: 4%;
-}
-
 .dreamspace {
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .mbm-vid {
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-/* HOVER GROW EFFECT START */
-.grow {
-    transition: all 0.4s ease-in-out;
+.flex-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 600px;
 }
-  
-.grow:hover {
-    transform: scale(1.4);
-}
-/* HOVER GROW EFFECT END */
 
 .card {
+    height: 380px;
+    background-color: rgb(188, 169, 169);
+    border-radius: 5px;
+    margin: 5px;
+    flex: 0 0 100px;
+}
+
+.info-cont {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.25rem;
-  height: 10rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 10px;
+  width: 95%;
+  margin: 0 auto;
 }
 
-.card img {
-  mix-blend-mode: luminosity;
-  z-index: 1000;
-  border-radius: 10px;
+.project-name {
+  font-size: 1.5vh;
+  justify-self: flex-start;
 }
 
-.sticky {
-  margin-left: 10%;
-  background-color: white;
-  z-index: 0;
-}
-
-.parallax {
-  margin-right: 15%;
-}

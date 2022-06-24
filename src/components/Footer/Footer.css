@@ -9,11 +9,10 @@
 }
 
 .marquee-work span {
-    -webkit-text-stroke: 1.5px white;
+    -webkit-text-stroke: 1.5px #B18E85!important;
     color: transparent;
     font-size: 15vh;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'MonkegRegular', sans-serif;
     letter-spacing: 3px;
     word-spacing: 2vh;
 }

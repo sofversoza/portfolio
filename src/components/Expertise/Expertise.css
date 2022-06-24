@@ -12,7 +12,7 @@
 }
 
 .expertise h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'MonkegRegular', sans-serif;
 }
 
 .items {
@@ -20,13 +20,13 @@
 }
 
 .title {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   letter-spacing: 0.1vw;
 }
 
 .text {
   font-size: 0.9vw;
-  line-height: 3em;
+  line-height: 3.5em;
   cursor: default;
 }
 

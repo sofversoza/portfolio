@@ -79,7 +79,7 @@
 .marquee-cont {
     white-space: nowrap;
     height: 100%;
-    margin-top: -11%;
+    margin-top: -13%;
 }
 
 .marquee {
@@ -87,8 +87,13 @@
 }
 
 .marquee span {
-    font-size: 10vw;
+    font-size: 11vw;
     text-transform: uppercase;
+    -webkit-text-stroke: 1.5px white;
+    color: transparent;
+    font-family: 'MonkegRegular', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 1vh;
 }
 
 /* FADE IN ANIMATION STARTS */

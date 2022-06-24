@@ -21,12 +21,8 @@ function Expertise() {
   const textContainer = {
     hidden: { x:'100vw' },
     show: {
-      x:0,
+      x: 0,
       transition: {
-        type:'spring', 
-        mass: 1.5,
-        damping: 10,
-        stiffness: 65,
         when: 'beforeChildren',
         staggerChildren: 0.5
       }
