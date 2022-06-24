@@ -42,3 +42,11 @@ body::before {
     transform: rotate(360deg);
   }
 } */
+
+/* MEDIA QUERIES */
+/* PHONES */
+@media screen and (max-width: 480px) {
+  * {
+    overflow-x: hidden;
+  }
+}

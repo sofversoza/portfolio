@@ -49,6 +49,7 @@
 	top: 5.7%;
 	z-index: 2!important;
 	cursor: grab!important;
+	overflow: visible!important;
 }
 
 .envelope {
@@ -57,6 +58,7 @@
 	border: 1px solid #fff;
 	border-radius: 3%;
 	background-color: white;
+	overflow: visible!important;
 }
 
 .back {
@@ -122,6 +124,7 @@
 	top: 0;
 	left: 44.5px;
 	z-index: 3;
+	overflow: visible!important;
 }
 
 .front:before {
@@ -146,6 +149,7 @@
 	width: 0;
 	top: -2.5px;
 	left: -44.5px;
+	overflow: visible!important;
 }
 
 .top {
@@ -174,20 +178,19 @@
 /* MEDIA QUERIES */
 
 /* PHONES */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 480px) {
+	.navbar {
+		margin-top: 4%;
+	}
+
 	.name {
-		font-size: 1.3em;
-		left: 10vw!important;
+		font-size: 1.7em;
+		left: 9vw!important;
 	}
 
 	.envelope-cont {
-		right: 25%;
-		top: 3.5%;
-		width: fit-content;
-		height: fit-content;
-	}
-
-	.envelope {
+		right: 12%;
+		top: 5%;
 		width: fit-content;
 		height: fit-content;
 	}

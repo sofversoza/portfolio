@@ -1,141 +1,161 @@
 .home-cont {
-    max-height: 100vh;
-    position: relative;
-    overflow: hidden;
+	max-height: 100vh;
+	position: relative;
 }
 
 .object-cont img {
-    object-fit: contain;
-    position: absolute;
-    max-width: 70%;
-    z-index: 0;
-    margin-top: 1.5%;
+	object-fit: contain;
+	position: absolute;
+	max-width: 70%;
+	z-index: 0;
+	margin-top: 1.5%;
 }
 
 .statue-cont img {
-    object-fit: contain;
-    object-position: top center;
-    position: relative;
-    max-width: 43%;
-    left: 15%;
-    margin-top: 3%;
-    z-index: 1!important;
+	object-fit: contain;
+	object-position: top center;
+	position: relative;
+	max-width: 43%;
+	left: 15%;
+	margin-top: 3%;
+	z-index: 1!important;
 }
 
 .luminaire {
-    position: relative;
-    bottom: -30vw;
-    left: 54vw;
-    width: 0.1vw;
-    height: 0.1vw;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 0 0 5vw 5vw rgb(252, 252, 252), 0 0 10vw 6vw rgb(108, 62, 234);
-    transition: box-shadow 4s ease-out;
-    animation: spin 16s linear infinite;
-    z-index: 1;
+	position: relative;
+	bottom: -30vw;
+	left: 54vw;
+	width: 0.1vw;
+	height: 0.1vw;
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: 0 0 5vw 5vw rgb(252, 252, 252), 0 0 10vw 6vw rgb(108, 62, 234);
+	transition: box-shadow 4s ease-out;
+	animation: spin 16s linear infinite;
+	z-index: 1;
 }
   
 @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .intro {
-    position: absolute;
-    right: 3.5%;
-    top: 18%;
+	position: absolute;
+	right: 3.5%;
+	top: 18%;
 }
 
 .intro p {
-    font-size: 1.5vw;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
 }
 
 .intro h3 {
-    font-size: 1.2vw;
-    line-height: 1.1;
-    color: #4351B8;
+	font-size: 1.2vw;
+	line-height: 1.7;
+	color: #4351B8;
+	overflow: visible!important;
 }
 
 .globe {
-    animation: bouncey 0.8s;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
-    animation-iteration-count: infinite;
+	animation: bouncey 0.8s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+	animation-iteration-count: infinite;
 }
 
 @keyframes bouncey {
-    from {
-        transform: translate3d(0, -5px, 0);
-    }
-    to {
-        transform: translate3d(0, 3px, 0);
-    }
+	from {
+		transform: translate3d(0, -5px, 0);
+	}
+	to {
+		transform: translate3d(0, 3px, 0);
+	}
 }
 
 .marquee-cont {
-    white-space: nowrap;
-    height: 100%;
-    margin-top: -13%;
+	white-space: nowrap;
+	height: 100%;
+	margin-top: -13%;
 }
 
 .marquee {
-   z-index: 0!important;
+  z-index: 0!important;
 }
 
 .marquee span {
-    font-size: 11vw;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1.5px white;
-    color: transparent;
-    font-family: 'MonkegRegular', sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 1vh;
+	font-size: 11vw;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1.5px white;
+	color: transparent;
+	font-family: 'MonkegRegular', sans-serif;
+	letter-spacing: 2px;
+	word-spacing: 1vh;
 }
 
 /* FADE IN ANIMATION STARTS */
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  
-    50% {
-      transform: translate(0);
-    }
-  
-    100% {
-      opacity: 1;
-    }
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	50% {
+		transform: translate(0);
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 .appear {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    /* without this once the elements appear ( fadeIn ) they will go away this makes sure the end state stays the same */
-    animation-fill-mode: forwards;
-}
-/* FADE IN ANIMATION ENDS */
-
-/* SHAKE ON HOVER EFFECT STARTS */
-/* SHAKING OBJECT TWEAKING POSITION */
-/* .statue-img {
-    transform: translate(-3px, -3px);
-} */
-
-/* SHAKING OBJECT ANIMATE ON HOVER */
-/* @keyframes shake-statue-img {
-    0% { transform: translate(-8px, -14px); }
-    33% { transform: translate(-10px, -14px); }
-    66% { transform: translate(-10px, -16px); }
-    100% { transform: translate(-8px, -16px); }
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	/* without this once the elements appear ( fadeIn ) they will go away this makes sure the end state stays the same */
+	animation-fill-mode: forwards;
 }
 
-.statue-cont:hover {
-    animation: shake-statue-img .5s infinite alternate;
-} */
-/* SHAKE ON HOVER EFFECT ENDS */
+/* MEDIA QUERIES */
+
+/* PHONES */
+@media screen and (max-width: 480px) {
+	.home-cont {
+		margin-top: 35%;
+		overflow: visible!important;
+	}
+	
+	.intro {
+		top: -17%;
+		right: 5%;
+	}
+
+	.intro p {
+		font-size: 1.7vw;
+	}
+
+	.intro h3 {
+		font-size: 1.6vw;
+	}
+
+	.statue-cont {
+		margin-top: -17.3%;
+	}
+
+	.statue-cont img {
+		max-width: 65%;
+		left: 9%;
+	}
+
+	.object-cont img {
+		max-width: 80%;
+	}
+
+	.marquee-cont {
+		margin-top: -13.5%;
+	}
+}
