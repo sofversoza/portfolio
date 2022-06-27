@@ -1,12 +1,9 @@
 import React from 'react'
 import './Projects.css'
-import mbmlogo from '../../assets/MonBeauMonde.png'
-import mbm from '../../assets/MBM-recording.mov'
 import mbm2 from '../../assets/mbm2.mov'
 import dreamspace from '../../assets/dreamspace.png'
 import Marquee from "react-fast-marquee"
 import { AiFillCodeSandboxCircle, AiFillGithub } from 'react-icons/ai'
-
 
 function Projects() {
   return (

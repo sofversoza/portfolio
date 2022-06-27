@@ -69,12 +69,13 @@ function Expertise() {
           initial='hidden'
           animate={animate}
         >
-          <motion.h2 variants={textItem} whileHover={hover}>WEB DESIGN</motion.h2>
-          <motion.h2 variants={textItem} whileHover={hover}>WEB DEVELOPMENT</motion.h2>
-          <motion.h2 variants={textItem} whileHover={hover}>ART DIRECTION</motion.h2>
-          <motion.h2 variants={textItem} whileHover={hover}>BRAND IDENTITY</motion.h2>
-          <motion.h2 variants={textItem} whileHover={hover}>CONCEPT & CURATION</motion.h2>
-          <motion.h2 variants={textItem} whileHover={hover}>CREATIVE WRITING</motion.h2>
+          <motion.h2 className="expertiselist1" variants={textItem} whileHover={hover}>WEB DESIGN</motion.h2>
+          <motion.h2 className="expertiselist2" variants={textItem} whileHover={hover}>WEB DEVELOPMENT</motion.h2>
+          <motion.h2 className="expertiselist7" variants={textItem} whileHover={hover}>PRODUCT DESIGN</motion.h2>
+          <motion.h2 className="expertiselist3" variants={textItem} whileHover={hover}>ART DIRECTION</motion.h2>
+          <motion.h2 className="expertiselist4" variants={textItem} whileHover={hover}>BRAND IDENTITY</motion.h2>
+          <motion.h2 className="expertiselist5" variants={textItem} whileHover={hover}>CONCEPT & CURATION</motion.h2>
+          <motion.h2 className="expertiselist6" variants={textItem} whileHover={hover}>CREATIVE WRITING</motion.h2>
         </motion.div>
       </div>
     </div>

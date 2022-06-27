@@ -7,11 +7,11 @@
 
 .navbar {
 	height: 100px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* display: flex; */
 	padding-top: 1vw;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 /* NAME LOGO */
@@ -176,23 +176,31 @@
 }
 
 /* MEDIA QUERIES */
-
 /* PHONES */
 @media screen and (min-width: 400px) and (max-width: 480px) {
 	.navbar {
 		margin-top: 4%;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.name-cont {
+	 text-align: center;
+	 align-items: center;
 	}
 
 	.name {
-		font-size: 1.7em;
-		left: 9vw!important;
+		font-size: 2.5em;
+		top: 120px;
+		left: 11vw!important;
 	}
 
 	.envelope-cont {
-		right: 12%;
-		top: 5%;
+		right: 8%;
+		top: 4%;
 		width: fit-content;
 		height: fit-content;
+		z-index: 50!important;
 	}
 
 	.back {
@@ -252,5 +260,10 @@
 	.envelope:hover .letter {
 		transform: translateY(-25px);
 	}
+
+}
+
+/* TABLETS */
+@media screen and (max-width: 768px) {
 
 }

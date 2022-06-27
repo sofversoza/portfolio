@@ -1,55 +1,55 @@
 .projects-cont {
-    min-height: 100vh;
-    overflow: wrap;
+	min-height: 100vh;
+	overflow: wrap;
 }
 
 .marquee-projects-cont {
-    white-space: nowrap;
-    height: 100%;
+	white-space: nowrap;
+	height: 100%;
 }
 
 .marquee-project span {
-    -webkit-text-stroke: 1.5px #B18E85!important;
-    color: transparent;
-    font-size: 15vh;
-    font-family: 'MonkegRegular', sans-serif;
-    letter-spacing: 3px;
-    word-spacing: 2vh;
+	-webkit-text-stroke: 1.5px #B18E85!important;
+	color: transparent;
+	font-size: 15vh;
+	font-family: 'MonkegRegular', sans-serif;
+	letter-spacing: 3px;
+	word-spacing: 2vh;
 }
 
 .title-outline {
-    -webkit-text-stroke: 0!important;
-    color: #B18E85!important;
-    font-family: 'MonkegRegular', sans-serif;
-    font-weight: 700;
+	-webkit-text-stroke: 0!important;
+	color: #B18E85!important;
+	font-family: 'MonkegRegular', sans-serif;
+	font-weight: 700;
 }
 
 .dreamspace {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .mbm-vid {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .flex-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    min-height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+	min-height: 600px;
 }
 
 .card {
-    height: 380px;
-    background-color: rgb(188, 169, 169);
-    border-radius: 5px;
-    margin: 5px;
-    flex: 0 0 100px;
-    overflow: visible!important;
+	height: 380px;
+	background-color: rgb(188, 169, 169);
+	border-radius: 5px;
+	margin: 5px;
+	flex: 0 0 100px;
+	overflow: visible!important;
 }
 
 .info-cont {
@@ -66,3 +66,39 @@
   justify-self: flex-start;
 }
 
+/* MEDIA QUERIES */
+/* PHONES */
+@media screen and (max-width: 480px) {
+	.flex-cont {
+		margin: 0 5%;
+	}
+
+	.card {
+		flex: 100%;
+    max-width: 100%;
+		height: auto;
+		justify-content: center;
+	}
+
+	.mbm-vid {
+		width: 100.2%;
+		justify-self: center;
+	}
+
+	.dreamspace {
+		width: 100%;
+		justify-self: center;
+		height: auto;
+	}
+
+	.info-cont  {
+		padding-bottom: 5%;
+	}
+
+}
+
+
+/* TABLETS */
+@media screen and (max-width: 768px) {
+	
+}
