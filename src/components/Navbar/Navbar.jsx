@@ -43,7 +43,7 @@ function Navbar() {
   }
 
   return (
-    <div className="navbar">
+    <div className="navbar home">
       <motion.div ref={ref} className="name-cont"
         variants={nameVariant}
         initial='hidden'

@@ -53,12 +53,13 @@
 	animation-direction: alternate;
 	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
 	animation-iteration-count: infinite;
+	z-index: 50!important;
 }
 
 .info {
 	text-align: center;
 	position: relative;
-	top: 15vw;
+	top: 9vw;
 }
 
 .info h2 {
