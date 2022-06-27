@@ -1,6 +1,7 @@
 .home-cont {
 	max-height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 
 .object-cont img {

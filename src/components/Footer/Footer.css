@@ -26,12 +26,20 @@
 	}
 }
 
-.copyright {
-	font-size: 1.5vh;
+.bottom-info-flex {
 	position: absolute;
-	left: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	bottom: 5%;
-	margin-top: 10vh;
+	width: 100%;
+	padding: 0 5vw;
+	margin-top: 13vh;
+	line-height: 4vh;
+}
+
+.copyright {
+	font-size: 1.7vh;
 	animation: bounce 0.8s;
 	animation-direction: alternate;
 	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
@@ -39,10 +47,6 @@
 }
 
 .slide-up {
-	position: absolute;
-	bottom: 5%;
-	right: 5%;
-	margin-top: 10vh;
 	font-size: 2.5vh;
 	cursor: pointer;
 	animation: bounce 0.8s;
@@ -147,11 +151,19 @@ ul li:nth-child(4) a:before {
 	}
 
 	.info {
-		top: 11vw;
+		top: 10vw;
 	}
 
 	.info h2 {
-		font-size: 3vw;
-		line-height: 4vw;
+		font-size: 3.5vw;
+		line-height: 5vw;
+	}
+
+	.copyright {
+		font-size: 1.3vh;
+	}
+
+	.slide-up {
+		font-size: 2vh;
 	}
 }

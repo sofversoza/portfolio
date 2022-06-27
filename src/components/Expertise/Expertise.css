@@ -1,27 +1,73 @@
-.expertise {
+.expertise-cont {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
+  overflow: hidden;
+}
+
+.expertise {
+  width: 100%;
+  text-align: center;
 }
 
 .expertise h1 {
   font-family: 'MonkegRegular', sans-serif;
 }
 
-.items {
-  margin: 6%;
-}
-
 .title {
-  font-size: 1.5vw;
-  letter-spacing: 0.1vw;
+  font-size: 2.5vw;
+  letter-spacing: 0.6vw;
+  margin-bottom: 2vh;
+  margin-left: 1%;
 }
 
 .text {
-  font-size: 0.9vw;
-  line-height: 3.5em;
+  font-size: 1vw;
+  line-height: 3em;
   cursor: default;
+} 
+
+.expertiselist1 {
+  letter-spacing: 1.3em;
+  word-spacing: 3.5em;
+  margin-left: 2.5%;
+}
+
+.expertiselist2 {
+  letter-spacing: 0.7em;
+  word-spacing: 1.3em;
+  margin-left: 1.5%;
+}
+
+.expertiselist3 {
+  letter-spacing: 1em;
+  word-spacing: 2.1em;
+  margin-left: 2%;
+}
+
+.expertiselist4 {
+  letter-spacing: 1em;
+  word-spacing: 0.3em;
+  margin-left: 1.7%;
+}
+
+.expertiselist5 {
+  letter-spacing: 0.6em;
+  word-spacing: 0.2em;
+  margin-left: 1.3%;
+}
+
+.expertiselist6 {
+  letter-spacing: 0.8em;
+  word-spacing: 0.4em;
+  margin-left: 1.5%;
+}
+
+.expertiselist7 {
+  letter-spacing: 0.9em;
+  word-spacing: 0.9em;
+  margin-left: 2%;
 }
 
 
@@ -51,7 +97,6 @@
     margin-top: 50px;
     font-size: 2.6vw;
     line-height: 2em;
-    cursor: default;
   }
 
   .expertiselist1 {
@@ -62,7 +107,8 @@
 
   .expertiselist2 {
     letter-spacing: 4.5px;
-    word-spacing: 9px;
+    word-spacing: 10px;
+    margin-left: -1px;
   }
 
   .expertiselist3 {
@@ -80,6 +126,7 @@
   .expertiselist5 {
     letter-spacing: 3.3px;
     word-spacing: 4px;
+    margin-left: -1px;
   }
   
   .expertiselist6 {

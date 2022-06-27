@@ -131,12 +131,19 @@ function Footer() {
           <motion.h2 variants={eachInfoVariant} whileHover='hover'>RESUME</motion.h2>
           <motion.h2 variants={eachInfoVariant} whileHover='hover'>CONTACT ME</motion.h2>
         </motion.div>
-        <h3 className="copyright">
+        {/* <h3 className="copyright">
           © Sofia Versoza — 2022
         </h3>
         <Link to='home'smooth={true} duration={1000}>
           <BsArrowUp className="slide-up" />
-        </Link>
+        </Link> */}
+        
+        <div className="bottom-info-flex">
+          <h3 className="copyright">© Sofia Versoza — 2022</h3>
+          <Link to='home'smooth={true} duration={1000}>
+            <BsArrowUp className="slide-up" />
+          </Link>
+        </div>
     </div>
   )
 }

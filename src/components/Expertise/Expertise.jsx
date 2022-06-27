@@ -61,8 +61,7 @@ function Expertise() {
           variants={title}
           initial='hidden'
           animate={animate}
-        >
-          <h1>EXPERTISE</h1>
+        ><h1>EXPERTISE</h1>
         </motion.div>
         <motion.div ref={ref} className="items text" 
           variants={textContainer}
