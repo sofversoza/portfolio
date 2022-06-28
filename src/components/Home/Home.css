@@ -142,6 +142,57 @@
 }
 
 /* MEDIA QUERIES */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+	.intro {
+		top: 5%;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.intro p {
+		font-size: 2.7vw;
+	}
+
+	.intro h3 {
+		font-size: 2.7vw;
+	}
+
+	.object-cont img {
+		max-width: 110%;
+		right: 15%;
+		bottom: 5.5%;
+	}
+
+	.statue-cont img {
+		object-fit: contain;
+		object-position: top center;
+		position: relative;
+		max-width: 75%;
+		left: 4%;
+		margin-top: 30.6%;
+	}
+
+	.luminaire {
+		bottom: -77vw;
+		left: 71vw;
+		width: 0.01vw;
+		height: 0.01vw;
+		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
+	}
+
+	.marquee-cont {
+		margin-top: -15.5%;
+	}
+
+	.marquee span {
+		font-size: 13vw;
+	}
+}
+
 /* PHONES */
 @media screen and (max-width: 480px) {
 	.home-cont {
@@ -189,7 +240,6 @@
 		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
 	}
 
-/* MARQUEES */
 	.marquee-cont {
 		margin-top: -18.5%;
 		width: 85.6%;
@@ -206,5 +256,5 @@
 	.marquee {
 		z-index: 5!important;
 	}
-
 }
+

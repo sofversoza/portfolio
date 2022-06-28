@@ -145,6 +145,31 @@ ul li:nth-child(4) a:before {
 }
 
 /* MEDIA QUERIES */
+/* TABLETS */
+@media screen and (max-width: 768px) {
+	.social-icons {
+		max-width: 85vw;
+		margin-top: 15vh;
+	}
+
+	.info {
+		top: 17vw;
+	}
+
+	.info h2 {
+		font-size: 2vw;
+		line-height: 2.8vw;
+	}
+
+	.slide-up {
+		font-size: 2.8vh;
+	}
+
+	.copyright {
+		font-size: 1.9vh;
+	}
+}
+
 /* PHONES */
 @media screen and (max-width: 480px) {
 	.social-icons {

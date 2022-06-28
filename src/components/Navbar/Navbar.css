@@ -172,6 +172,18 @@
 }
 
 /* MEDIA QUERIES */
+/* TABLETS */
+@media screen and (max-width: 768px) {
+	.navbar {
+		margin-top: 7%;
+	}
+
+	.name {
+		font-size: 7vw;
+		left: 7.5vw!important;
+	}
+}
+
 /* PHONES */
 @media screen and (min-width: 400px) and (max-width: 480px) {
 	.navbar {
@@ -256,10 +268,5 @@
 	.envelope:hover .letter {
 		transform: translateY(-25px);
 	}
-
-}
-
-/* TABLETS */
-@media screen and (max-width: 768px) {
 
 }

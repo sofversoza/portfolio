@@ -67,6 +67,36 @@
 }
 
 /* MEDIA QUERIES */
+/* TABLETS */
+@media screen and (max-width: 768px) {
+	.flex-cont {
+		margin: 0 5%;
+	}
+
+	.card {
+		flex: 100%;
+    max-width: 85%;
+		height: auto;
+		justify-content: center;
+		margin-bottom: 3%;
+	}
+
+	.mbm-vid {
+		width: 100.2%;
+		justify-self: center;
+	}
+
+	.dreamspace {
+		width: 100%;
+		justify-self: center;
+		height: auto;
+	}
+
+	.info-cont  {
+		padding-bottom: 3%;
+	}
+}
+
 /* PHONES */
 @media screen and (max-width: 480px) {
 	.flex-cont {
@@ -94,11 +124,4 @@
 	.info-cont  {
 		padding-bottom: 5%;
 	}
-
-}
-
-
-/* TABLETS */
-@media screen and (max-width: 768px) {
-	
 }

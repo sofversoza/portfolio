@@ -70,8 +70,21 @@
   margin-left: 2%;
 }
 
-
 /* MEDIA QUERIES */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 3.5vw;
+    margin-left: 1.5%;
+  }
+
+  .text {
+    font-size: 1.3vw;
+    line-height: 3em;
+    cursor: default;
+  } 
+}
+
 /* PHONES */
 @media screen and (max-width: 480px) {
   .expertise {

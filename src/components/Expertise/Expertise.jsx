@@ -23,6 +23,7 @@ function Expertise() {
     show: {
       x: 0,
       transition: {
+        delay: 1,
         when: 'beforeChildren',
         staggerChildren: 0.5
       }
