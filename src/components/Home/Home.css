@@ -69,13 +69,13 @@
 }
 
 .about4 {
-	letter-spacing: 0.35em;
-	word-spacing: 0.6em;
+	letter-spacing: 0.3em;
+	word-spacing: 0.87em;
 }
 
 .about5 {
-	letter-spacing: 0.22em;
-	word-spacing: 0.52em;
+	letter-spacing: 0.2em;
+	word-spacing: 0.6em;
 }
 
 .intro h3 {
@@ -83,8 +83,8 @@
 	line-height: 1.2em;
 	color: #4351B8;
 	overflow: visible!important;
-	letter-spacing: 0.15em;
-	word-spacing: 0.11em;
+	letter-spacing: 0.1em;
+	word-spacing: 0.55em;
 }
 
 .globe {

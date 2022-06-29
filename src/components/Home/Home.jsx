@@ -103,19 +103,6 @@ function Home() {
 					initial='hidden'
 					animate={animate}
 				>
-					{/* <p>
-            I'M SOFIA. NICE TO SEE YOU HERE
-            <br />
-            I'M A WEB & PRODUCT DESIGNER
-            <br />
-            FULL STACK SOFTWARE ENGINEER
-            <br />
-            AND A FULL TIME CREATIVE
-            <br />
-            BORN IN MNL — BASED IN PHX
-            <br />
-            <br />
-          </p> */}
 					<h5 className='about1'>I'M SOFIA. NICE TO SEE YOU HERE</h5>
 					<h5 className='about2'>I'M A WEB & PRODUCT DESIGNER</h5>
 					<h5 className='about3'>FULL STACK SOFTWARE ENGINEER</h5>
@@ -127,7 +114,7 @@ function Home() {
 							style={{ verticalAlign: 'top', fill: '#4351B8' }}
 							size='1.3em'
 							className='globe'
-						/>{' '}
+						/>
 						&nbsp;AVAILABLE FOR REMOTE WORK
 					</h3>
 				</motion.div>
