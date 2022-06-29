@@ -37,6 +37,17 @@ function Home() {
 		},
 	}
 
+	const shapeVariant = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				delay: 0.5,
+				duration: 1.5,
+			},
+		},
+	}
+
 	const statueVariant = {
 		hidden: {
 			x: '-100vw',
@@ -68,8 +79,8 @@ function Home() {
 		show: {
 			opacity: 1,
 			transition: {
-				delay: 3.5,
-				duration: 1.5,
+				delay: 1,
+				duration: 2,
 			},
 		},
 	}
@@ -79,7 +90,13 @@ function Home() {
 			<Navbar />
 			<div ref={ref} className='home-cont'>
 				<div className='object-cont'>
-					<img src={object} alt='object' />
+					<motion.img
+						src={object}
+						alt='object'
+						variants={shapeVariant}
+						initial='hidden'
+						animate={animate}
+					/>
 				</div>
 				<motion.div
 					className='luminaire'
@@ -126,32 +143,13 @@ function Home() {
 						animate={animate}
 					>
 						<Marquee speed={80} gradient={false}>
-							<span>&nbsp; &nbsp; Full-Stack Development</span>
-							<span>&nbsp; &nbsp; Front-End Development</span>
-							<span>&nbsp; &nbsp; Web Design</span>
-							<span>&nbsp; &nbsp; Art Direction</span>
-							<span>&nbsp; &nbsp; Concept & Curation</span>
+							<span>&nbsp;Full-Stack Development</span>
+							<span>&nbsp;Front-End Development</span>
+							<span>&nbsp;Web Design</span>
+							<span>&nbsp;Art Direction</span>
+							<span>&nbsp;Concept & Curation</span>
 						</Marquee>
 					</motion.div>
-					{/* <div className="marquee-cont2">
-            <motion.div className="marquee2"
-              variants={marqueeVariant}
-              initial='hidden'
-              animate={animate}
-            >
-              <Marquee 
-              speed={50}
-              gradient={false}
-              direction={'right'}
-              >
-                <span>&nbsp; &nbsp; Full-Stack Development</span>
-                <span>&nbsp; &nbsp; Front-End Development</span>
-                <span>&nbsp; &nbsp; Web Design</span>
-                <span>&nbsp; &nbsp; Art Direction</span>
-                <span>&nbsp; &nbsp; Concept & Curation</span>
-              </Marquee>
-            </motion.div>
-          </div> */}
 				</div>
 			</div>
 			<Expertise />

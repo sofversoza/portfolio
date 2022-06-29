@@ -27,8 +27,8 @@ function Projects() {
 		show: {
 			opacity: 1,
 			transition: {
-				delay: 1,
-				duration: 1,
+				delay: 0.5,
+				duration: 1.5,
 			},
 		},
 	}
@@ -86,10 +86,10 @@ function Projects() {
 			>
 				<h3>FEATURED</h3>
 				<p>
-					MORE ON&nbsp;
+					—VIEW MORE ON&nbsp;
 					<a href='https://github.com/sofversoza' target='_blank'>
 						<motion.div whileHover={{ x: 5 }} className='gitdiv'>
-							GITHUB
+							GITHUB—
 						</motion.div>
 					</a>
 				</p>

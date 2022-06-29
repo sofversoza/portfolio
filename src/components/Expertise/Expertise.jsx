@@ -23,7 +23,7 @@ function Expertise() {
 		show: {
 			x: 0,
 			transition: {
-				delay: 1,
+				delay: 0.5,
 				when: 'beforeChildren',
 				staggerChildren: 0.5,
 			},
@@ -59,7 +59,7 @@ function Expertise() {
 		<div ref={ref} className='expertise-cont'>
 			<div ref={ref} className='expertise'>
 				<motion.div
-					className='items titleText'
+					className='titleText'
 					variants={titleText}
 					initial='hidden'
 					animate={animate}
@@ -68,7 +68,7 @@ function Expertise() {
 				</motion.div>
 				<motion.div
 					ref={ref}
-					className='items text'
+					className='text'
 					variants={textContainer}
 					initial='hidden'
 					animate={animate}

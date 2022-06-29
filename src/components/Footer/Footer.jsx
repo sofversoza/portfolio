@@ -127,9 +127,16 @@ function Footer() {
 				</motion.ul>
 			</div>
 			<div className='bottom-info-flex'>
-				<h3 className='copyright'>© Sofia Versoza — 2022</h3>
+				<motion.h3
+					className='copyright'
+					whileHover={{ color: 'rgb(254, 189, 200, 0.7)' }}
+				>
+					<span>©</span> SOFIA VERSOZA — 2022
+				</motion.h3>
 				<Link to='home' smooth={true} duration={1000}>
-					<BsArrowUp className='slide-up' />
+					<motion.p whileHover={{ scale: 1.5, transition: { duration: 1 } }}>
+						<BsArrowUp className='slide-up' />
+					</motion.p>
 				</Link>
 			</div>
 		</div>

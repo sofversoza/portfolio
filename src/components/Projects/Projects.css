@@ -41,7 +41,7 @@
 .featured h3 {
 	margin-top: 1%;
   font-family: 'MonkegRegular', sans-serif;
-  -webkit-text-stroke: 1.5px rgb(254, 189, 200, 0.7);
+  -webkit-text-stroke: 1.5px rgb(254, 189, 200, 0.8);
   color: white;
   font-size: 4em;
   letter-spacing: 1px;
@@ -50,13 +50,13 @@
 
 .featured p {
 	font-size: 0.7em;
-	letter-spacing: 0.7em;
-	word-spacing: 0.5em;
+	letter-spacing: 0.6em;
+	word-spacing: 0.3em;
 }
 
 .gitdiv {
 	display: inline-block;
-	color: #B18E85!important;
+	color: rgb(254, 189, 200, 0.8)!important;
 	cursor: pointer;
 	letter-spacing: 0.5em!important;
 }
@@ -72,7 +72,7 @@
 
 .card {
 	height: 380px;
-	background-color: rgb(188, 169, 169);
+	background-color: #B18E85!important;
 	border-radius: 5px;
 	margin: 15px;
 	flex: 0 0 100px;
@@ -91,7 +91,7 @@
 .project-name {
   font-size: 1.5vh;
   justify-self: flex-start;
-	letter-spacing: 1px;
+	letter-spacing: 0.15em;
 	word-spacing: 0.1em;
 }
 
