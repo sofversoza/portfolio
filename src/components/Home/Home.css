@@ -44,14 +44,15 @@
 
 .intro {
 	position: absolute;
-	right: 3.5%;
+	right: 4%;
 	top: 18%;
 }
 
 .intro p {
 	font-size: 1.5vw;
 	line-height: 1.5;
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
+	word-spacing: 0.1em;
 }
 
 .intro h3 {
@@ -59,6 +60,8 @@
 	line-height: 1.7;
 	color: #4351B8;
 	overflow: visible!important;
+	letter-spacing: 1px;
+	word-spacing: 0.1em;
 }
 
 .globe {
@@ -97,26 +100,6 @@
 	word-spacing: 1vh;
 }
 
-/* .marquee-cont2 {
-	white-space: nowrap;
-	height: 100%;
-	margin-top: -13%;
-}
-
-.marquee2 {
-  z-index: 0!important;
-}
-
-.marquee2 span {
-	font-size: 11vw;
-	text-transform: uppercase;
-	-webkit-text-stroke: 1.5px white;
-	color: transparent;
-	font-family: 'MonkegRegular', sans-serif;
-	letter-spacing: 2px;
-	word-spacing: 1vh;
-} */
-
 /* FADE IN ANIMATION STARTS */
 @keyframes fadeIn {
 	0% {
@@ -132,6 +115,7 @@
 		opacity: 1;
 	}
 }
+
 .appear {
 	opacity: 0;
 	animation-name: fadeIn;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css';
 import Home from './components/Home/Home'
 import Loader from './components/Loader/Loader'
-import Form from './components/Footer/Form'
+import Form from './components/Form/Form'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {

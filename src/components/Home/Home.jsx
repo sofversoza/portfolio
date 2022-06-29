@@ -102,7 +102,11 @@ function Home() {
           <p>
             I'M SOFIA. NICE TO SEE YOU HERE
             <br />
-            WEB DESIGNER & FULL-TIME CREATIVE
+            I'M A WEB & PRODUCT DESIGNER
+            <br />
+            FULL STACK SOFTWARE ENGINEER
+            <br />
+            AND A FULL TIME CREATIVE
             <br />
             BORN IN MNL — BASED IN PHX
             <br />

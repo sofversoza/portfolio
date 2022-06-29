@@ -39,26 +39,26 @@
 }
 
 .featured h3 {
-	font-family: 'MonkegRegular', sans-serif;
-	font-size: 4.5em;
 	margin-top: 1%;
+  font-family: 'MonkegRegular', sans-serif;
+  -webkit-text-stroke: 1.5px rgb(254, 189, 200, 0.7);
+  color: white;
+  font-size: 4em;
+  letter-spacing: 1px;
+  line-height: 1em;
 }
 
-.more {
-	margin-top: -2%;
-	text-align: center;
-}
-
-.more p {
+.featured p {
 	font-size: 0.7em;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.7em;
+	word-spacing: 0.5em;
 }
 
 .gitdiv {
 	display: inline-block;
 	color: #B18E85!important;
-	cursor: default!important;
-	letter-spacing: 0!important;
+	cursor: pointer;
+	letter-spacing: 0.5em!important;
 }
 
 .flex-cont {
@@ -66,8 +66,8 @@
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	margin: 0 auto;
-	min-height: 30vw;
+	margin: 5% auto 5% auto;
+	min-height: 40vh;
 }
 
 .card {
@@ -91,6 +91,8 @@
 .project-name {
   font-size: 1.5vh;
   justify-self: flex-start;
+	letter-spacing: 1px;
+	word-spacing: 0.1em;
 }
 
 /* MEDIA QUERIES */
