@@ -44,24 +44,47 @@
 
 .intro {
 	position: absolute;
-	right: 4%;
+	right: 8vw;
 	top: 18%;
 }
 
-.intro p {
-	font-size: 1.5vw;
-	line-height: 1.5;
-	letter-spacing: 1px;
-	word-spacing: 0.1em;
+.intro h5 {
+	font-size: 1.1vw;
+	line-height: 1.2em;
+}
+
+.about1 {
+	letter-spacing: 0.2em;
+	word-spacing: 0.21em;
+}
+
+.about2 {
+	letter-spacing: 0.2em;
+	word-spacing: 0.4em;
+}
+
+.about3 {
+	letter-spacing: 0.2em;
+	word-spacing: 0.44em;
+}
+
+.about4 {
+	letter-spacing: 0.35em;
+	word-spacing: 0.6em;
+}
+
+.about5 {
+	letter-spacing: 0.22em;
+	word-spacing: 0.52em;
 }
 
 .intro h3 {
 	font-size: 1.2vw;
-	line-height: 1.7;
+	line-height: 1.2em;
 	color: #4351B8;
 	overflow: visible!important;
-	letter-spacing: 1px;
-	word-spacing: 0.1em;
+	letter-spacing: 0.15em;
+	word-spacing: 0.11em;
 }
 
 .globe {
