@@ -6,6 +6,10 @@ import Marquee from "react-fast-marquee"
 import { BsGlobe } from 'react-icons/bs'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import Navbar from '../Navbar/Navbar'
+import Expertise from '../Expertise/Expertise'
+import Projects from '../Projects/Projects'
+import Footer from '../Footer/Footer'
 
 function Home() {
   const animate = useAnimation();
@@ -71,83 +75,89 @@ function Home() {
   }
 
   return (
-    <div ref={ref} className="home-cont">
-      <div className="object-cont">
-        <img src={object} alt="object" />
-      </div>
-      <motion.div className="luminaire"
-        variants={lumiVariant}
-        initial='hidden'
-        animate={animate}
-      >
-      </motion.div>
-      <div className="statue-cont">
-        <motion.img src={statue} alt="object" className='statue-img'
-        variants={statueVariant}
-        initial='hidden'
-        animate={animate}
-        />
-      </div>
-      <motion.div className="intro"
-        variants={introVariant}
-        initial='hidden'
-        animate={animate}
-      >
-        <p>
-          I'M SOFIA. NICE TO SEE YOU HERE
-          <br />
-          WEB DESIGNER & FULL-TIME CREATIVE
-          <br />
-          BORN IN MNL — BASED IN PHX
-          <br />
-          <br />
-        </p>             
-        <h3>
-          <BsGlobe 
-            style={{ verticalAlign:'top', fill:'#4351B8' }} 
-            size="1.3em" 
-            className="globe" 
-          /> &nbsp;AVAILABLE FOR REMOTE WORK
-        </h3>
-      </motion.div>
-      <div className="marquee-cont">
-          <motion.div className="marquee"
-            variants={marqueeVariant}
-            initial='hidden'
-            animate={animate}
-          >
-            <Marquee 
-            speed={80}
-            gradient={false}
+    <>
+      <Navbar />
+      <div ref={ref} className="home-cont">
+        <div className="object-cont">
+          <img src={object} alt="object" />
+        </div>
+        <motion.div className="luminaire"
+          variants={lumiVariant}
+          initial='hidden'
+          animate={animate}
+        >
+        </motion.div>
+        <div className="statue-cont">
+          <motion.img src={statue} alt="object" className='statue-img'
+          variants={statueVariant}
+          initial='hidden'
+          animate={animate}
+          />
+        </div>
+        <motion.div className="intro"
+          variants={introVariant}
+          initial='hidden'
+          animate={animate}
+        >
+          <p>
+            I'M SOFIA. NICE TO SEE YOU HERE
+            <br />
+            WEB DESIGNER & FULL-TIME CREATIVE
+            <br />
+            BORN IN MNL — BASED IN PHX
+            <br />
+            <br />
+          </p>             
+          <h3>
+            <BsGlobe 
+              style={{ verticalAlign:'top', fill:'#4351B8' }} 
+              size="1.3em" 
+              className="globe" 
+            /> &nbsp;AVAILABLE FOR REMOTE WORK
+          </h3>
+        </motion.div>
+        <div className="marquee-cont">
+            <motion.div className="marquee"
+              variants={marqueeVariant}
+              initial='hidden'
+              animate={animate}
             >
-              <span>&nbsp; &nbsp; Full-Stack Development</span>
-              <span>&nbsp; &nbsp; Front-End Development</span>
-              <span>&nbsp; &nbsp; Web Design</span>
-              <span>&nbsp; &nbsp; Art Direction</span>
-              <span>&nbsp; &nbsp; Concept & Curation</span>
-            </Marquee>
-          </motion.div>
-          {/* <div className="marquee-cont2">
-          <motion.div className="marquee2"
-            variants={marqueeVariant}
-            initial='hidden'
-            animate={animate}
-          >
-            <Marquee 
-            speed={50}
-            gradient={false}
-            direction={'right'}
+              <Marquee 
+              speed={80}
+              gradient={false}
+              >
+                <span>&nbsp; &nbsp; Full-Stack Development</span>
+                <span>&nbsp; &nbsp; Front-End Development</span>
+                <span>&nbsp; &nbsp; Web Design</span>
+                <span>&nbsp; &nbsp; Art Direction</span>
+                <span>&nbsp; &nbsp; Concept & Curation</span>
+              </Marquee>
+            </motion.div>
+            {/* <div className="marquee-cont2">
+            <motion.div className="marquee2"
+              variants={marqueeVariant}
+              initial='hidden'
+              animate={animate}
             >
-              <span>&nbsp; &nbsp; Full-Stack Development</span>
-              <span>&nbsp; &nbsp; Front-End Development</span>
-              <span>&nbsp; &nbsp; Web Design</span>
-              <span>&nbsp; &nbsp; Art Direction</span>
-              <span>&nbsp; &nbsp; Concept & Curation</span>
-            </Marquee>
-          </motion.div>
-        </div> */}
+              <Marquee 
+              speed={50}
+              gradient={false}
+              direction={'right'}
+              >
+                <span>&nbsp; &nbsp; Full-Stack Development</span>
+                <span>&nbsp; &nbsp; Front-End Development</span>
+                <span>&nbsp; &nbsp; Web Design</span>
+                <span>&nbsp; &nbsp; Art Direction</span>
+                <span>&nbsp; &nbsp; Concept & Curation</span>
+              </Marquee>
+            </motion.div>
+          </div> */}
+        </div>
       </div>
-    </div>  
+      <Expertise />
+      <Projects />
+      <Footer />
+    </>  
   )
 }
 

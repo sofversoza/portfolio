@@ -34,20 +34,47 @@
 	border-top-right-radius: 5px;
 }
 
+.featured {
+	text-align: center;
+}
+
+.featured h3 {
+	font-family: 'MonkegRegular', sans-serif;
+	font-size: 4.5em;
+	margin-top: 1%;
+}
+
+.more {
+	margin-top: -2%;
+	text-align: center;
+}
+
+.more p {
+	font-size: 0.7em;
+	letter-spacing: 0.2em;
+}
+
+.gitdiv {
+	display: inline-block;
+	color: #B18E85!important;
+	cursor: default!important;
+	letter-spacing: 0!important;
+}
+
 .flex-cont {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0 auto;
-	min-height: 600px;
+	min-height: 30vw;
 }
 
 .card {
 	height: 380px;
 	background-color: rgb(188, 169, 169);
 	border-radius: 5px;
-	margin: 5px;
+	margin: 15px;
 	flex: 0 0 100px;
 	overflow: visible!important;
 }

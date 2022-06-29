@@ -185,7 +185,7 @@
 }
 
 /* PHONES */
-@media screen and (min-width: 400px) and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 400px)  {
 	.navbar {
 		margin-top: 4%;
 		flex-direction: row;

@@ -3,11 +3,15 @@ import './Footer.css'
 import Marquee from "react-fast-marquee";
 import { BsGithub, BsMedium, BsLinkedin, BsArrowUp } from 'react-icons/bs'
 import { SiCodesandbox } from 'react-icons/si'
+import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import { Link } from 'react-scroll'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { Link as LinkRouter, useNavigate, Routes, Route } from "react-router-dom";
+
 
 function Footer() {
+  const navigate = useNavigate();
   const animate = useAnimation();
   const {ref, inView} = useInView({
     threshold: 0.2
@@ -51,28 +55,13 @@ function Footer() {
     show: { opacity: 1 }
   }
 
-  const infoVariant = {
-    hidden: { x:'100vh' },
+  const ideaVariant = {
+    hidden: { opacity: 0 },
     show: {
-      x: 0,
+      opacity: 1,
       transition: {
-        delay: 1, 
-        duration: 2,
-        when: 'beforeChildren',
-        staggerChildren: 0.5
-      }
-    }
-  }
-
-  const eachInfoVariant = {
-    hidden: { x:'100vh' },
-    show: { x: 0 },
-    hover: {
-      color:'#4351B8',
-      scale: 1.1,
-      transition: {
-        duration: 1.3,
-        yoyo: 10
+        delay: 0.5, 
+        duration: 3
       }
     }
   }
@@ -94,7 +83,18 @@ function Footer() {
               </Marquee>
             </motion.div>
         </div>
-
+        <motion.div className="idea"
+          variants={ideaVariant}
+          initial='hidden'
+          animate={animate}
+        >
+          <h2>HAVE AN IDEA?</h2>
+          <h3 onClick={() => navigate("/form")}>HIRE ME
+            <motion.div whileHover={{x:10}} className="arrowdiv">
+              <MdOutlineArrowForwardIos size="1em" style={{ verticalAlign:'top' }} />
+            </motion.div>
+          </h3>
+        </motion.div>
         <div ref={ref} className="social-icons">
           <motion.ul
             variants={socialsVariant}
@@ -123,14 +123,6 @@ function Footer() {
             </motion.li>
           </motion.ul>
         </div>
-        <motion.div className="info"
-          variants={infoVariant}
-          initial='hidden'
-          animate={animate}
-        >
-          <motion.h2 variants={eachInfoVariant} whileHover='hover'>RESUME</motion.h2>
-          <motion.h2 variants={eachInfoVariant} whileHover='hover'>CONTACT ME</motion.h2>
-        </motion.div>  
         <div className="bottom-info-flex">
           <h3 className="copyright">© Sofia Versoza — 2022</h3>
           <Link to='home'smooth={true} duration={1000}>

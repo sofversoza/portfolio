@@ -15,15 +15,15 @@
   font-family: 'MonkegRegular', sans-serif;
 }
 
-.title {
-  font-size: 2.5vw;
+.titleText {
+  font-size: 2vw!important;
   letter-spacing: 0.6vw;
   margin-bottom: 2vh;
   margin-left: 1%;
 }
 
 .text {
-  font-size: 1vw;
+  font-size: 0.8vw!important;
   line-height: 3em;
   cursor: default;
 } 
@@ -73,7 +73,7 @@
 /* MEDIA QUERIES */
 /* TABLETS */
 @media screen and (min-width: 768px) {
-  .title {
+  .titleText {
     font-size: 3.5vw;
     margin-left: 1.5%;
   }

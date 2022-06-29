@@ -47,9 +47,20 @@ function Projects() {
 
   const hover = { 
     color:'#4351B8',
-    scale: 1.1,
+    scale: 1.2,
     transition: {
       duration: 1.3
+    }
+  }
+
+  const featuredVariants = {
+    hidden: { opacity: 0 },
+    show: { 
+      opacity: 1,
+      transition: {
+        delay: 1, 
+        duration: 2
+      }
     }
   }
 
@@ -70,35 +81,53 @@ function Projects() {
             </Marquee>
         </motion.div>
       </div>
+      <motion.div className="featured"
+        variants={featuredVariants}
+        initial='hidden'
+        animate={animate}
+      >
+        <h3>FEATURED</h3>
+      </motion.div>
+      <motion.div className="more"
+        variants={featuredVariants}
+        initial='hidden'
+        animate={animate}
+      > 
+        <p>MORE & COLLABORATIVE PROJECTS ON&nbsp;
+          <a href="https://github.com/sofversoza" target="_blank">
+           <motion.div whileHover={hover} className="gitdiv">GITHUB</motion.div>
+          </a>
+        </p>
+      </motion.div>
       <div className="flex-cont">
         <motion.div className="card firstProj"
           variants={cardVariant}
           initial='hidden'
           animate={animate}
-          whileHover={hover}
         >
           <video className="mbm-vid" src={mbm2} width="590" height="auto" loop autoPlay muted></video>
           <div className="info-cont">
             <p className="project-name">MON BEAU MONDE MUSEUM</p>
-            <div className="links-cont">
-              <AiFillGithub size="22px" style={{ verticalAlign:'top' }} />&nbsp;&nbsp;
-              <AiFillCodeSandboxCircle size="22px" style={{ verticalAlign:'top' }} />
-            </div>
+            <motion.div className="links-cont" whileHover={hover}>
+              <a href="https://github.com/sofversoza" target="_blank">
+               <AiFillCodeSandboxCircle size="22px" style={{ verticalAlign:'top' }} />
+              </a>
+            </motion.div>
           </div>
         </motion.div>
         <motion.div className="card secondProj"
           variants={cardVariant}
           initial='hidden'
           animate={animate}
-          whileHover={hover}
         >
           <img className="dreamspace" src={dreamspace} width="590" height="324" />
           <div className="info-cont">
             <p className="project-name">DREAMSPACE</p>
-            <div className="links-cont">
-              <AiFillGithub size="22px" style={{ verticalAlign:'top' }} />&nbsp;&nbsp;
-              <AiFillCodeSandboxCircle size="22px" style={{ verticalAlign:'top' }} />
-            </div>
+            <motion.div className="links-cont" whileHover={hover}>
+              <a href="https://github.com/sofversoza/dreamspace" target="_blank">
+               <AiFillGithub size="22px" style={{ verticalAlign:'top' }} />
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       </div>

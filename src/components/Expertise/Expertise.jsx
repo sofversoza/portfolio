@@ -30,7 +30,7 @@ function Expertise() {
     }
   }
 
-  const title = {
+  const titleText = {
     hidden: { x:'-100vw' },
     show: { 
       x: 0,
@@ -58,8 +58,8 @@ function Expertise() {
   return (
     <div ref={ref} className="expertise-cont">
       <div ref={ref} className="expertise">
-        <motion.div className="items title"
-          variants={title}
+        <motion.div className="items titleText"
+          variants={titleText}
           initial='hidden'
           animate={animate}
         ><h1>EXPERTISE</h1>

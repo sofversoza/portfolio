@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
-import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
-import Projects from './components/Projects/Projects'
-import Expertise from './components/Expertise/Expertise'
 import Loader from './components/Loader/Loader'
-import Footer from './components/Footer/Footer'
-import { motion } from 'framer-motion'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
-
+import Form from './components/Footer/Form'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -26,13 +20,10 @@ function App() {
       { loading ? (
         <Loader setLoading={setLoading} />
       ) : (
-       <>
-        <Navbar />
-        <Home />
-        <Expertise />
-        <Projects />
-        <Footer />
-       </>
+       <Routes>
+          <Route path='/' element={<Home />} /> 
+          <Route path='/form' element={<Form />} /> 
+       </Routes>
       )}
     </div>
   );
