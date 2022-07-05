@@ -6,6 +6,14 @@ import { MdOutlineArrowBackIos } from 'react-icons/md'
 import { RiMailSendFill } from 'react-icons/ri'
 import { Link, useNavigate } from 'react-router-dom'
 
+const fadeinV = {
+	hidden: { opacity: 0 },
+	visible: {
+		opacity: 1,
+		transition: { delay: 0.6, duration: 1.5 },
+	},
+}
+
 const backdropV = {
 	visible: { opacity: 1 },
 	hidden: { opacity: 0 },
@@ -56,16 +64,18 @@ function Form() {
 					</motion.div>
 					&nbsp;BACK TO HOME
 				</h3>
-				<h1>GET IN TOUCH</h1>
+				<motion.h1 variants={fadeinV} initial='hidden' animate='visible'>
+					GET IN TOUCH
+				</motion.h1>
 			</div>
-			<div className='wrapper'>
+			<motion.div className='wrapper' variants={fadeinV} initial='hidden' animate='visible'>
 				<form ref={form} onSubmit={sendEmail}>
 					<input placeholder='FULL NAME' type='text' name='user_name' />
 					<input placeholder='EMAIL ADDRESS' type='email' name='user_email' />
 					<textarea placeholder='TELL ME ABOUT YOUR IDEA' name='message' />
 					<motion.input type='submit' value='SEND' whileHover={{ x: 5 }} />
 				</form>
-			</div>
+			</motion.div>
 
 			<div className='modal-cont'>
 				<AnimatePresence exitBeforeEnter>

@@ -11,7 +11,7 @@
 .main-page h3 {
   font-size: 0.8em;
   line-height: 1em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   word-spacing: 1px;
   cursor: pointer;
 }
@@ -145,6 +145,7 @@ input[type=submit] {
 
 /* MEDIA QUERIES */
 /* TABLETS */
+/* iPad Mini, iPad  */
 @media screen and (max-width: 768px) {
   .main-page h1 {
     word-spacing: 0;
@@ -170,7 +171,55 @@ input[type=submit] {
   }
 }
 
+/* Screen that are both smaller than 1200px & larger than 768px */
+/* iPad Pros, iPad Air, Surface Pro 7,   */
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .main-page h3 {
+    line-height: 1.2em;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+  }
+
+  .arrowdiv {
+    position: absolute;
+    top: 6%;
+    left: 8.5%;
+  }
+
+  .main-page h1 {
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    margin-top: 16%;
+  }
+
+  .modal {
+    margin-top: 3%;
+    max-width: 420px;
+    padding: 50px 30px;
+  }  
+
+  .modal h5 {
+    font-size: 1.3em;
+  }
+
+  .modal h6 {
+    font-size: 1em;
+  }
+
+  .modal p {
+    margin-top: 4%;
+    font-size: 0.9em;
+  }
+
+  .modal button {
+    font-size: 13px;
+    margin-top: 33px;
+  }
+}
+
 /* PHONES */
+/* iPhone 6/7/8, SE, XR, X, 12 Pro, Pixel, Samsung Galaxies  */
 @media screen and (max-width: 480px) {
   .main-page h3 {
     line-height: 1.2em;

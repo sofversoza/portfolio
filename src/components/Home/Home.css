@@ -124,55 +124,32 @@
 	word-spacing: 0.3em;
 }
 
-/* FADE IN ANIMATION STARTS */
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	50% {
-		transform: translate(0);
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-.appear {
-	opacity: 0;
-	animation-name: fadeIn;
-	animation-duration: 3s;
-	animation-delay: 2s;
-	/* without this once the elements appear ( fadeIn ) they will go away this makes sure the end state stays the same */
-	animation-fill-mode: forwards;
-}
-
 /* MEDIA QUERIES */
-/* TABLETS */
+/* TABLETS */ 
+/* iPad Mini, iPad  */
 @media screen and (max-width: 768px) {
 	.intro {
-		top: 5%;
+		top: 7.5%;
 		right: 0;
+		left: 0;
 		width: 100%;
 		text-align: center;
 		margin-right: auto;
 		margin-left: auto;
 	}
 
-	.intro p {
-		font-size: 2.7vw;
+	.intro h5 {
+		font-size: 1.85vw;
 	}
 
 	.intro h3 {
-		font-size: 2.7vw;
+		font-size: 2.02vw;
 	}
 
 	.object-cont img {
-		max-width: 110%;
-		right: 15%;
-		bottom: 5.5%;
+		max-width: 95%;
+		left: 1.2em;
+		bottom: 5.8%;
 	}
 
 	.statue-cont img {
@@ -180,36 +157,42 @@
 		object-position: top center;
 		position: relative;
 		max-width: 75%;
-		left: 4%;
-		margin-top: 30.6%;
+		left: 16%;
+		margin-top: 31%;
 	}
 
 	.luminaire {
-		bottom: -77vw;
-		left: 71vw;
+		bottom: -81vw;
+		left: 82vw;
 		width: 0.01vw;
 		height: 0.01vw;
 		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
-		margin-top: -15.5%;
+		margin-top: -18%;
 	}
 
 	.marquee span {
-		font-size: 13vw;
+		font-size: 15vw;
 	}
 }
 
 /* PHONES */
-@media screen and (max-width: 480px) {
+/* iPhone 11 Pro Max */
+/* @media screen and (max-width: 414px) {
+
+} */
+
+/* iPhone 6/7/8, SE, XR, X, 12 Pro, Pixel, Samsung Galaxies  */
+/* @media screen and (max-width: 480px) {
 	.home-cont {
-		margin-top: 30%;
+		margin-top: 10%;
 		overflow: visible!important;
 	}
 	
 	.intro {
-		top: -10px;
+		top: -8px;
 		right: 0;
 		width: 100%;
 		text-align: center;
@@ -217,40 +200,42 @@
 		margin-left: auto;
 	}
 
-	.intro p {
-		font-size: 3vw;
+	.intro h5 {
+		font-size: 2.5vw;
 	}
 
 	.intro h3 {
-		font-size: 3vw;
+		font-size: 2.71vw;
+		line-height: 2em;
 	}
 
 	.object-cont img {
-		max-width: 140%;
-		right: 11%;
-		bottom: 5%;
+		max-width: 130%;
+		bottom: 5.5%;
+		margin-top: 0;
+		left: -40%;
 	}
 
 	.statue-cont img {
 		object-fit: contain;
 		object-position: top center;
 		position: relative;
-		max-width: 100%;
-		left: -1%;
-		margin-top: 40.6%;
+		max-width: 90%;
+		left: 1%;
+		margin-top: 35.6%;
 	}
 
 	.luminaire {
-		bottom: -105vw;
-		left: 84vw;
+		bottom: -95vw;
+		left: 78vw;
 		width: 0.01vw;
 		height: 0.01vw;
-		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
+		box-shadow: 0 0 10vw 10vw rgb(252, 252, 252), 0 0 18vw 13vw rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
-		margin-top: -18.5%;
-		width: 85.6%;
+		margin-top: -21%;
+		width: 87%;
 	}
 
 	.marquee span {
@@ -264,5 +249,81 @@
 	.marquee {
 		z-index: 5!important;
 	}
-}
+} */
 
+/* iPad */
+@media (max-width: 820px) {
+
+} 
+
+/* iPhone Large Screen */
+@media (max-width: 480px) {
+	.home-cont {
+		margin-top: 10%;
+		overflow: visible!important;
+	}
+	
+	.intro {
+		top: -8px;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.intro h5 {
+		font-size: 0.8em;
+	}
+
+	.intro h3 {
+		font-size: 0.86em;
+		line-height: 2em;
+	}
+
+	.object-cont img {
+		max-width: 130%;
+		bottom: 5.5%;
+		margin-top: 0;
+		left: -40%;
+	}
+
+	.statue-cont img {
+		object-fit: contain;
+		object-position: top center;
+		position: relative;
+		max-width: 90%;
+		left: 1%;
+		margin-top: 35.6%;
+	}
+
+	.luminaire {
+		bottom: -95vw;
+		left: 78vw;
+		width: 0.01vw;
+		height: 0.01vw;
+		box-shadow: 0 0 10vw 10vw rgb(252, 252, 252), 0 0 18vw 13vw rgb(148, 111, 248);
+	}
+
+	.marquee-cont {
+		margin-top: -21%;
+		width: 87%;
+	}
+
+	.marquee span {
+		font-size: 4em;
+		letter-spacing: -6px;
+		word-spacing: 0.5vh;
+		-webkit-text-stroke: 1px #271916;
+		color: white;
+	}
+
+	.marquee {
+		z-index: 5!important;
+	}
+} 
+
+/* iPhone Reg Screen */
+@media (max-width: 320px) {
+
+}
