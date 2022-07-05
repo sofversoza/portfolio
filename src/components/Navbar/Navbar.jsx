@@ -5,18 +5,18 @@ import { useInView } from 'react-intersection-observer'
 
 function Navbar() {
 	const animate = useAnimation()
-	const { ref, inView } = useInView({
-		threshold: 0.2,
-	})
+	// const { ref, inView } = useInView({
+	// 	threshold: 0.2,
+	// })
 
-	useEffect(() => {
-		if (inView) {
-			animate.start('show')
-		}
-		if (!inView) {
-			animate.start('hidden')
-		}
-	}, [inView])
+	// useEffect(() => {
+	// 	if (inView) {
+	// 		animate.start('show')
+	// 	}
+	// 	if (!inView) {
+	// 		animate.start('hidden')
+	// 	}
+	// }, [inView])
 
 	const nameVariant = {
 		hidden: { opacity: 0 },
@@ -45,11 +45,12 @@ function Navbar() {
 	return (
 		<div className='navbar home'>
 			<motion.div
-				ref={ref}
+				// ref={ref}
 				className='name-cont'
 				variants={nameVariant}
 				initial='hidden'
-				animate={animate}
+				animate='show'
+				// animate={animate}
 			>
 				<p className='name name1'>SOFIA VERSOZA</p>
 				<p className='name name2'>SOFIA VERSOZA</p>
