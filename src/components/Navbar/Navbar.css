@@ -1,12 +1,5 @@
-/* @font-face {
-	font-family: 'Gravhez';
-	src: url('../../assets/Gravhez.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-} */
-
 .navbar {
-	height: 100px;
+	min-height: 100px;
 	padding-top: 3vw;
 }
 
@@ -14,7 +7,7 @@
 .name {
 	color: white;
 	font-family: 'MonkegRegular', sans-serif;
-	font-size: 3.7vw;
+	font-size: clamp(2.5rem, 3.5vw + 1rem, 4rem);
 	cursor: pointer;
 	position: absolute;
 	left: 5.5vw!important;
@@ -192,21 +185,22 @@
 		width: 100%;
 	}
 
-	.name-cont {
-	 text-align: center;
-	 align-items: center;
+	.name {
+		font-size: 2.4rem;
+		top: 115px;
+		left: 0!important;
+		margin: auto;
+  	min-width: 100%;
+		text-align: center;
 	}
 
-	.name {
-		font-size: 2em;
-		top: 120px;
-		left: 11vw!important;
-	}
+	/* .envelope-cont {
+		display: none;
+	} */
 
 	.envelope-cont {
-		/* display: none; */
 		right: 8%;
-		top: 4%;
+		top: 5%;
 		width: fit-content;
 		height: fit-content;
 		z-index: 50!important;
@@ -269,5 +263,4 @@
 	.envelope:hover .letter {
 		transform: translateY(-25px);
 	}
-
 }

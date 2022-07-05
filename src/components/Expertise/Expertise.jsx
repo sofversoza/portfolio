@@ -78,7 +78,7 @@ function Expertise() {
 						variants={textItem}
 						whileHover={hover}
 					>
-						WEB DESIGN
+						UI/UX DESIGN
 					</motion.h2>
 					<motion.h2
 						className='expertiselist2'
@@ -120,7 +120,7 @@ function Expertise() {
 						variants={textItem}
 						whileHover={hover}
 					>
-						CREATIVE WRITING
+						CONTENT WRITING
 					</motion.h2>
 				</motion.div>
 			</div>
