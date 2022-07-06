@@ -55,6 +55,10 @@ function Navbar() {
 				<p className='name name1'>SOFIA VERSOZA</p>
 				<p className='name name2'>SOFIA VERSOZA</p>
 			</motion.div>
+			<motion.div className='mobile-name' variants={nameVariant} initial='hidden' animate='show'>
+				<p className='firstN'>SOFIA</p>
+				<p className='lastN'>VERSOZA</p>
+			</motion.div>
 			<motion.div
 				className='envelope-cont'
 				variants={envelopeVariant}

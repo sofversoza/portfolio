@@ -2,6 +2,11 @@
 	height: 100px;
 }
 
+/* Mobile name */
+.mobile-name {
+	display: none;
+}
+
 /* NAME LOGO */
 .name {
 	color: white;
@@ -181,23 +186,39 @@
 @media (max-width: 480px) {
 	.navbar {
 		min-width: 100%;
-		min-height: 100%;
+		overflow: visible!important;
 	}
 
 	.name {
-		font-size: 2.4rem;
-		top: 100px;
-		left: 0!important;
+		display: none;
+	}
+
+	.mobile-name {
+		display: inline;
+		min-height: 100%;
+	}
+
+	.mobile-name p {
+	  font-family: 'MonkegRegular', sans-serif;
+		font-size: 3.1rem;
 		margin: auto;
   	min-width: 100%;
 		text-align: center;
+		line-height: 0.8em;
+		overflow: visible!important;
+	}
+
+	.firstN {
+		padding-top: 6%;
+		font-size: 3.8rem!important;
+		letter-spacing: 0.15em;
+	}
+
+	.envelope-cont {
+		display: none;
 	}
 
 	/* .envelope-cont {
-		display: none;
-	} */
-
-	.envelope-cont {
 		right: 8%;
 		top: 5%;
 		width: fit-content;
@@ -261,5 +282,5 @@
 
 	.envelope:hover .letter {
 		transform: translateY(-25px);
-	}
+	} */
 }
