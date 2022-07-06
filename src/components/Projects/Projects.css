@@ -41,7 +41,7 @@
 .featured h3 {
 	margin-top: 1%;
   font-family: 'MonkegRegular', sans-serif;
-  -webkit-text-stroke: 1.5px rgb(254, 189, 200, 0.8);
+  -webkit-text-stroke: 1.1px rgb(254, 189, 200, 0.8);
   color: white;
   font-size: 4em;
   letter-spacing: 1px;
@@ -52,13 +52,23 @@
 	font-size: 0.7em;
 	letter-spacing: 0.6em;
 	word-spacing: 0.3em;
+	/* line-height: 1.2em; */
 }
 
 .gitdiv {
 	display: inline-block;
+}
+
+.gitdiv a {
+	text-decoration: none;
+}
+
+.gitdiv p {
+	/* line-height: 1.2em; */
+	font-size: 1em;
 	color: rgb(254, 189, 200, 0.8)!important;
 	cursor: pointer;
-	letter-spacing: 0.5em!important;
+	letter-spacing: 0.6em!important;
 }
 
 .flex-cont {
@@ -128,8 +138,17 @@
 
 /* PHONES */
 @media screen and (max-width: 480px) {
+	.gitdiv {
+		display: inline-block;
+	}
+
+	.featured h3 {
+		font-size: 3em;
+		overflow-y: hidden;
+	}
+
 	.flex-cont {
-		margin: 0 5%;
+		margin: 5% 5%;
 	}
 
 	.card {

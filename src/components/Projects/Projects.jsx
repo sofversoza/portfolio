@@ -86,10 +86,10 @@ function Projects() {
 			>
 				<h3>FEATURED</h3>
 				<p>
-					—VIEW MORE ON&nbsp;
+					VIEW MORE ON&nbsp;
 					<a href='https://github.com/sofversoza' target='_blank'>
 						<motion.div whileHover={{ x: 5 }} className='gitdiv'>
-							GITHUB—
+							<p>GITHUB</p>
 						</motion.div>
 					</a>
 				</p>
