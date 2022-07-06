@@ -190,7 +190,7 @@
 /* iPhone Large Screen */
 @media (max-width: 480px) {
 	.home-cont {
-		margin-top: 20%;
+		margin-top: 12%;
 		overflow: visible!important;
 	}
 	
