@@ -161,7 +161,7 @@
 
 .envelope:hover .letter {
 	transform: translateY(-38px);
-	z-index: 2;
+	z-index: 3;
 }
 
 /* MEDIA QUERIES */
@@ -228,7 +228,7 @@
 	}
 
 	.text3 {
-		font-size: 9px;
+		font-size: 8px;
 	}
 
 	.front {
