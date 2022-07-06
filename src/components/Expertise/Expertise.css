@@ -26,7 +26,7 @@
 }
 
 .text h2 {
-  font-size: 1!important;
+  font-size: 1.5em!important;
   line-height: 1.3em;
   cursor: default;
 } 
@@ -74,14 +74,13 @@
 
 /* MEDIA QUERIES */
 /* TABLETS */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .titleText {
-    font-size: 3.5vw;
+    font-size: 1.65em!important;
   }
 
   .text {
-    font-size: 1.3vw;
-    line-height: 3em;
+    font-size: 0.8em!important;
     cursor: default;
   } 
 }
