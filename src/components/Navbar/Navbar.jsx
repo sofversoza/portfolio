@@ -23,8 +23,8 @@ function Navbar() {
 		show: {
 			opacity: 1,
 			transition: {
-				delay: 0.6,
-				duration: 2,
+				delay: 1,
+				duration: 2.5,
 				easing: 'easeInOut',
 			},
 		},
