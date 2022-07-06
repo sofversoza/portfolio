@@ -181,6 +181,7 @@
 @media (max-width: 480px) {
 	.navbar {
 		min-width: 100%;
+		min-height: 100%;
 	}
 
 	.name {
