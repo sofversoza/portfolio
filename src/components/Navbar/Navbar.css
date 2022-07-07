@@ -2,12 +2,24 @@
 	height: 100px;
 }
 
-/* Mobile name */
-.mobile-name {
+/* Smaller devices Name */
+.sm-name {
 	display: none;
 }
 
-/* NAME LOGO */
+.sm-name p {
+	font-family: 'MonkegRegular', sans-serif;
+	font-size: 3rem;
+	margin: auto;
+	padding: 10px;
+	min-width: 100%;
+	text-align: center;
+	line-height: 0.8em;
+	overflow: visible!important;
+}
+
+
+/* NAME | LOGO */
 .name {
 	color: white;
 	font-family: 'MonkegRegular', sans-serif;
@@ -169,8 +181,33 @@
 	z-index: 3;
 }
 
-/* MEDIA QUERIES */
-/* TABLETS */
+																						/* MEDIA QUERIES */
+/* iPad Pro 12.9" ( Portrait & Landscape ) */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.navbar {
+		margin-top: 7%;
+	}
+	
+	.envelope-cont {
+		display: none;
+	}
+
+	.name {
+		display: none;
+	}
+
+	.sm-name {
+		display: inline;
+		min-height: 100%;
+	}
+
+	
+
+}
+
 @media screen and (max-width: 768px) {
 	.navbar {
 		margin-top: 7%;
@@ -193,25 +230,9 @@
 		display: none;
 	}
 
-	.mobile-name {
+	.sm-name {
 		display: inline;
 		min-height: 100%;
-	}
-
-	.mobile-name p {
-	  font-family: 'MonkegRegular', sans-serif;
-		font-size: 3.1rem;
-		margin: auto;
-  	min-width: 100%;
-		text-align: center;
-		line-height: 0.8em;
-		overflow: visible!important;
-	}
-
-	.firstN {
-		padding-top: 6%;
-		font-size: 3.8rem!important;
-		letter-spacing: 0.15em;
 	}
 
 	.envelope-cont {

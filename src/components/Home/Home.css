@@ -125,8 +125,72 @@
 	word-spacing: 0.3em;
 }
 
-										/* MEDIA QUERIES */
-/* TABLETS */ 
+																/* MEDIA QUERIES */ 
+/* iPad Pro 12.9" ( Portrait & Landscape ) */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.home-cont {
+		margin-top: 10%;
+		overflow: visible!important;
+	}
+
+	.intro {
+		top: 13%;
+		right: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/* .intro h5 {
+		font-size: 1.2em;
+	} */
+
+	/* .intro h3 {
+		font-size: 1.3em;
+	} */
+
+	.object-cont img {
+		max-width: 95%;
+		left: 1.2em;
+		bottom: 5.8%;
+	}
+
+	.statue-cont img {
+		object-fit: contain;
+		object-position: top center;
+		position: relative;
+		max-width: 75%;
+		left: 16%;
+		margin-top: 38%;
+	}
+
+	.luminaire {
+		bottom: -85vw;
+		left: 82vw;
+		width: 0.01vw;
+		height: 0.01vw;
+		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
+	}
+
+	.marquee-cont {
+		margin-top: -18%;
+	}
+
+	.marquee span {
+		font-size: 15vw;
+	}
+}
+
+/* iPad Pro 10.5" */
+/* @media (max-width: 834px) {
+}  */
+
+/* iPad 1, 2, 3, 4, Mini & Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.home-cont {
 		margin-top: 5%;
@@ -183,14 +247,10 @@
 	}
 }
 
-/* iPad */
-/* @media (max-width: 820px) {
-}  */
-
 /* iPhone Large Screen */
 @media (max-width: 480px) {
 	.home-cont {
-		margin-top: 12%;
+		margin-top: 10%;
 		overflow: visible!important;
 	}
 	

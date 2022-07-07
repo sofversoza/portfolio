@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Navbar.css'
 import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+// import { useInView } from 'react-intersection-observer'
 
 function Navbar() {
 	const animate = useAnimation()
@@ -24,8 +24,7 @@ function Navbar() {
 			opacity: 1,
 			transition: {
 				delay: 1,
-				duration: 2.5,
-				easing: 'easeInOut',
+				duration: 2.5
 			},
 		},
 	}
@@ -55,9 +54,8 @@ function Navbar() {
 				<p className='name name1'>SOFIA VERSOZA</p>
 				<p className='name name2'>SOFIA VERSOZA</p>
 			</motion.div>
-			<motion.div className='mobile-name' variants={nameVariant} initial='hidden' animate='show'>
-				<p className='firstN'>SOFIA</p>
-				<p className='lastN'>VERSOZA</p>
+			<motion.div className='sm-name' variants={nameVariant} initial='hidden' animate='show'>
+				<p>SOFIA VERSOZA</p>
 			</motion.div>
 			<motion.div
 				className='envelope-cont'
