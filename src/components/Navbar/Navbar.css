@@ -188,7 +188,7 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	.navbar {
-		margin-top: 7%;
+		margin-top: 10%;
 	}
 	
 	.envelope-cont {
@@ -204,7 +204,9 @@
 		min-height: 100%;
 	}
 
-	
+	.sm-name p {
+		font-size: 6.5rem;
+	}
 
 }
 

@@ -132,12 +132,13 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	.home-cont {
-		margin-top: 10%;
+		margin-top: -2%;
 		overflow: visible!important;
+		min-height: 100vh;
 	}
 
 	.intro {
-		top: 13%;
+		top: 8%;
 		right: 0;
 		left: 0;
 		width: 100%;
@@ -146,17 +147,20 @@
 		margin-left: auto;
 	}
 
-	/* .intro h5 {
-		font-size: 1.2em;
-	} */
+	.intro h5 {
+		font-size: 1.7em;
+		line-height: 2rem;
+	}
 
-	/* .intro h3 {
-		font-size: 1.3em;
-	} */
+	.intro h3 {
+		margin-top: 1.5%;
+		font-size: 1.85em;
+		line-height: 3rem;
+	}
 
 	.object-cont img {
-		max-width: 95%;
-		left: 1.2em;
+		max-width: 100%;
+		left: 0;
 		bottom: 5.8%;
 	}
 
@@ -164,25 +168,33 @@
 		object-fit: contain;
 		object-position: top center;
 		position: relative;
-		max-width: 75%;
-		left: 16%;
-		margin-top: 38%;
+		max-width: 78%;
+		left: 15%;
+		margin-top: 39.8%;
 	}
 
 	.luminaire {
-		bottom: -85vw;
-		left: 82vw;
+		bottom: -91vw;
+		left: 83vw;
 		width: 0.01vw;
 		height: 0.01vw;
-		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
+		box-shadow: 0 0 6em 8em rgb(252, 252, 252), 0 0 8em 10em rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
 		margin-top: -18%;
 	}
 
+	.marquee {
+		z-index: 5!important;
+	}
+
 	.marquee span {
-		font-size: 15vw;
+		font-size: 10em;
+		letter-spacing: -6px;
+		word-spacing: 0.2em;
+		-webkit-text-stroke: 1.55px #271916;
+		color: white;
 	}
 }
 
