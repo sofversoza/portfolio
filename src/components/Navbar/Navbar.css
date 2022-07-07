@@ -27,7 +27,7 @@
 	cursor: pointer;
 	position: absolute;
 	left: 5.5vw!important;
-	transition: 2s ease;
+	/* transition: 2s ease; */
 	margin-top: -4px!important;
 	padding-top: 3vw;
 }
@@ -50,12 +50,13 @@
 
 /* ENVELOPE */
 .envelope-cont {
-	position: fixed!important;
+	/* position: fixed!important;
 	right: 4%;
 	top: 5.7%;
 	z-index: 2!important;
 	cursor: grab!important;
-	overflow: visible!important;
+	overflow: visible!important; */
+	display: none;
 }
 
 .envelope {
@@ -172,12 +173,12 @@
 }
 
 .envelope:hover .top {
-	-webkit-transform: rotateX(160deg);
+	transform: rotateX(160deg);
 	z-index: 0;
 }
 
 .envelope:hover .letter {
-	-webkit-transform: translateY(-38px);
+	transform: translateY(-38px);
 	z-index: 3;
 }
 
