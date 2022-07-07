@@ -269,11 +269,11 @@
 @media (max-width: 480px) {
 	.home-cont {
 		margin-top: -5.5%;
-		height: 100vh;
+		/* min-height: 100vh; */
 	}
 	
 	.intro {
-		top: 4%;
+		top: 5%;
 		right: 0;
 		min-width: 100%;
 		text-align: center;
@@ -293,7 +293,7 @@
 
 	.object-cont img {
 		max-width: 130%;
-		bottom: 2.1em;
+		bottom: 15.5em;
 		margin-top: 0;
 		left: -40%;
 	}
@@ -304,7 +304,7 @@
 		position: relative;
 		max-width: 90%;
 		left: 0.4em;
-		margin-top: 11em;
+		margin-top: 13em;
 	}
 
 	.luminaire {

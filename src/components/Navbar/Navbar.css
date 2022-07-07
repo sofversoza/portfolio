@@ -236,7 +236,7 @@
 /* iPhone large screen */
 @media (max-width: 480px) {
 	.navbar {
-		margin-top: 8%;
+		margin-top: 10%;
 		overflow: hidden;
 	}
 
@@ -250,7 +250,7 @@
 	}
 
 	.sm-name p {
-		font-size: 3rem;
+		font-size: 3.2rem;
 		padding: 10px 20px;
 	}
 
