@@ -132,7 +132,7 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	.home-cont {
-		margin-top: -3%;
+		margin-top: -5%;
 		/* overflow: visible!important; */
 		height: 100vh;
 	}
@@ -173,8 +173,8 @@
 	}
 
 	.luminaire {
-		bottom: -91vw;
-		left: 83vw;
+		bottom: -82.5vw;
+		left: 81.5vw;
 		width: 0.01vw;
 		height: 0.01vw;
 		box-shadow: 0 0 6em 8em rgb(252, 252, 252), 0 0 8em 10em rgb(148, 111, 248);
@@ -204,12 +204,12 @@
 /* iPad 1, 2, 3, 4, Mini & Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.home-cont {
-		margin-top: 5%;
-		overflow: visible!important;
+		margin-top: -5%;
+		/* overflow: visible!important; */
 	}
 
 	.intro {
-		top: 7.5%;
+		top: 6%;
 		right: 0;
 		left: 0;
 		width: 100%;
@@ -242,26 +242,34 @@
 	}
 
 	.luminaire {
-		bottom: -85vw;
-		left: 82vw;
+		bottom: -82.5vw;
+		left: 81.5vw;
 		width: 0.01vw;
 		height: 0.01vw;
-		box-shadow: 0 0 7vw 8vw rgb(252, 252, 252), 0 0 15vw 11vw rgb(148, 111, 248);
+		box-shadow: 0 0 6em 8em rgb(252, 252, 252), 0 0 8em 10em rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
 		margin-top: -18%;
 	}
 
+	.marquee {
+		z-index: 5!important;
+	}
+
 	.marquee span {
-		font-size: 15vw;
+		font-size: 9em;
+		letter-spacing: -6px;
+		word-spacing: 0.2em;
+		-webkit-text-stroke: 1.55px #271916;
+		color: white;
 	}
 }
 
 /* iPhone Large Screen */
 @media (max-width: 480px) {
 	.home-cont {
-		margin-top: 10%;
+		margin-top: -5%;
 		overflow: visible!important;
 	}
 	
@@ -276,7 +284,7 @@
 
 	.intro h5 {
 		font-size: 0.8em;
-		line-height: 1.1rem;
+		line-height: 0.8rem;
 	}
 
 	.intro h3 {
