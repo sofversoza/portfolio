@@ -234,7 +234,7 @@
 		left: 20.5em;
 		width: 0.01vw;
 		height: 0.01vw;
-		box-shadow: 0 0 3em 4em rgb(252, 252, 252), 0 0 5em 5em rgb(148, 111, 248);
+		box-shadow: 0 0 2em 3.5em rgb(252, 252, 252), 0 0 5em 4em rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
@@ -256,5 +256,10 @@
 } 
 
 /* iPhone Reg Screen */
-/* @media (max-width: 320px) {
-} */
+@media (max-width: 375px) {
+	.luminaire {
+		top: 25.5em;
+		left: 18.5em;
+		box-shadow: 0 0 2em 3em rgb(252, 252, 252), 0 0 5em 4em rgb(148, 111, 248);
+	}
+}
