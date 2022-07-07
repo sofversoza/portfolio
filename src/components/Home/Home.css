@@ -204,7 +204,7 @@
 @media screen and (max-width: 768px) {
 	.home-cont {
 		margin-top: -5%;
-		/* overflow: visible!important; */
+		height: 100vh;
 	}
 
 	.intro {
@@ -226,8 +226,8 @@
 	}
 
 	.object-cont img {
-		max-width: 95%;
-		left: 1.2em;
+		max-width: 100%;
+		left: 0;
 		bottom: 5.8%;
 	}
 
@@ -236,7 +236,7 @@
 		object-position: top center;
 		position: relative;
 		max-width: 75%;
-		left: 16%;
+		left: 15%;
 		margin-top: 38%;
 	}
 

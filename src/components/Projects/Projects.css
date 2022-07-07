@@ -105,11 +105,19 @@
 	word-spacing: 0.1em;
 }
 
-/* MEDIA QUERIES */
-/* TABLETS */
+																							/* MEDIA QUERIES */
+/* iPad Pro 12.9" ( Portrait & Landscape ) */
+/* @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	
+} */
+																				
+/* iPad 1-4, Mini and Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.flex-cont {
-		margin: 0 5%;
+		margin: 5% 5%;
 	}
 
 	.card {
@@ -136,7 +144,7 @@
 	}
 }
 
-/* PHONES */
+/* iPhone large screen */
 @media screen and (max-width: 480px) {
 	.gitdiv {
 		display: inline-block;
