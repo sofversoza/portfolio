@@ -125,7 +125,7 @@
 	word-spacing: 0.3em;
 }
 
-/* MEDIA QUERIES */
+										/* MEDIA QUERIES */
 /* TABLETS */ 
 @media screen and (max-width: 768px) {
 	.home-cont {
@@ -215,7 +215,7 @@
 
 	.object-cont img {
 		max-width: 130%;
-		bottom: 2.3em;
+		bottom: 2.1em;
 		margin-top: 0;
 		left: -40%;
 	}
@@ -225,16 +225,16 @@
 		object-position: top center;
 		position: relative;
 		max-width: 90%;
-		left: 0.8em;
+		left: 0.4em;
 		margin-top: 11em;
 	}
 
 	.luminaire {
 		top: 27em;
-		left: 21.5em;
+		left: 20.5em;
 		width: 0.01vw;
 		height: 0.01vw;
-		box-shadow: 0 0 10vw 10vw rgb(252, 252, 252), 0 0 18vw 13vw rgb(148, 111, 248);
+		box-shadow: 0 0 3em 4em rgb(252, 252, 252), 0 0 5em 5em rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
