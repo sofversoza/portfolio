@@ -118,11 +118,11 @@
 .marquee span {
 	font-size: 11vw;
 	text-transform: uppercase;
-	-webkit-text-stroke: 1.5px white;
+	-webkit-text-stroke: 1.3px white;
 	color: transparent;
 	font-family: 'MonkegRegular', sans-serif;
-	letter-spacing: 0.05em;
-	word-spacing: 0.3em;
+	letter-spacing: -4px;
+	word-spacing: 0.1em;
 }
 
 																/* MEDIA QUERIES */ 
@@ -292,7 +292,7 @@
 
 	.object-cont img {
 		max-width: 130%;
-		bottom: 13em;
+		bottom: 10em;
 		margin-top: 0;
 		left: -40%;
 	}
