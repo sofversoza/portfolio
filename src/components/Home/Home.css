@@ -237,7 +237,7 @@
 		position: relative;
 		max-width: 75%;
 		left: 15%;
-		margin-top: 30.8%;
+		margin-top: 31.2%;
 	}
 
 	.luminaire {
@@ -257,7 +257,7 @@
 	}
 
 	.marquee span {
-		font-size: 9em;
+		font-size: 8em;
 		letter-spacing: -6px;
 		word-spacing: 0.2em;
 		-webkit-text-stroke: 1.55px #271916;
