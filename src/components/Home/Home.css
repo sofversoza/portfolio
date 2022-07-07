@@ -133,7 +133,7 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 	.home-cont {
 		margin-top: -3%;
-		overflow: visible!important;
+		/* overflow: visible!important; */
 		height: 100vh;
 	}
 
@@ -167,7 +167,7 @@
 		object-fit: contain;
 		object-position: top center;
 		position: relative;
-		max-width: 78%;
+		max-width: 75%;
 		left: 15%;
 		margin-top: 30.8%;
 	}
