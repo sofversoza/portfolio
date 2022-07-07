@@ -189,7 +189,7 @@ ul li:nth-child(4) a:before {
 /* iPad 1-4, Mini and Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.social-icons {
-		max-width: 50%;
+		max-width: 40%;
 		margin-top: 15%;
 	}
 

@@ -203,12 +203,12 @@
 /* iPad 1, 2, 3, 4, Mini & Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.home-cont {
-		margin-top: -5%;
+		margin-top: -5.5%;
 		height: 100vh;
 	}
 
 	.intro {
-		top: 6%;
+		top: 4%;
 		right: 0;
 		left: 0;
 		width: 100%;
@@ -237,7 +237,7 @@
 		position: relative;
 		max-width: 75%;
 		left: 15%;
-		margin-top: 38%;
+		margin-top: 30.8%;
 	}
 
 	.luminaire {
@@ -245,7 +245,7 @@
 		left: 81.5vw;
 		width: 0.01vw;
 		height: 0.01vw;
-		box-shadow: 0 0 6em 8em rgb(252, 252, 252), 0 0 8em 10em rgb(148, 111, 248);
+		box-shadow: 0 0 5em 6em rgb(252, 252, 252), 0 0 6em 8em rgb(148, 111, 248);
 	}
 
 	.marquee-cont {
