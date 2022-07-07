@@ -1,5 +1,5 @@
 .home-cont {
-	max-height: 100vh;
+	min-height: 100vh;
 	position: relative;
 	overflow: hidden;
 }
@@ -269,7 +269,6 @@
 @media (max-width: 480px) {
 	.home-cont {
 		margin-top: -5%;
-		max-height: 80vh;
 	}
 	
 	.intro {
@@ -293,7 +292,7 @@
 
 	.object-cont img {
 		max-width: 130%;
-		bottom: 0;
+		bottom: 13em;
 		margin-top: 0;
 		left: -40%;
 	}
@@ -308,8 +307,8 @@
 	}
 
 	.luminaire {
-		top: 31em;
-		left: 23.5em;
+		top: 29em;
+		left: 19.55em;
 		width: 0.01vw;
 		height: 0.01vw;
 		box-shadow: 0 0 2.5em 4em rgb(252, 252, 252), 0 0 5em 4.5em rgb(148, 111, 248);
