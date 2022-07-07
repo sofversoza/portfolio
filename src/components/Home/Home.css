@@ -132,13 +132,13 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	.home-cont {
-		margin-top: -2%;
+		margin-top: -3%;
 		overflow: visible!important;
-		min-height: 100vh;
+		height: 100vh;
 	}
 
 	.intro {
-		top: 8%;
+		top: 6%;
 		right: 0;
 		left: 0;
 		width: 100%;
@@ -148,20 +148,19 @@
 	}
 
 	.intro h5 {
-		font-size: 1.7em;
-		line-height: 2rem;
+		font-size: 1.3em;
 	}
 
 	.intro h3 {
-		margin-top: 1.5%;
-		font-size: 1.85em;
-		line-height: 3rem;
+		margin-top: 1%;
+		font-size: 1.4em;
+		line-height: 1.5rem;
 	}
 
 	.object-cont img {
 		max-width: 100%;
 		left: 0;
-		bottom: 5.8%;
+		bottom: 12.5%;
 	}
 
 	.statue-cont img {
@@ -170,7 +169,7 @@
 		position: relative;
 		max-width: 78%;
 		left: 15%;
-		margin-top: 39.8%;
+		margin-top: 30.8%;
 	}
 
 	.luminaire {
