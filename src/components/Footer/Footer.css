@@ -173,11 +173,11 @@ ul li:nth-child(4) a:before {
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	ul {
-		gap: 1rem;
+		gap: 2rem;
 	}
 
 	.social-icons {
-		max-width: 50%;
+		max-width: 40%;
 	}
 
 	.arrowdiv {
