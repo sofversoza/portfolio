@@ -268,12 +268,12 @@
 /* iPhone Large Screen */
 @media (max-width: 480px) {
 	.home-cont {
-		margin-top: -5%;
-		overflow: visible!important;
+		margin-top: -5.5%;
+		height: 100vh;
 	}
 	
 	.intro {
-		top: -6px;
+		top: 4%;
 		right: 0;
 		min-width: 100%;
 		text-align: center;
@@ -283,7 +283,7 @@
 
 	.intro h5 {
 		font-size: 0.8em;
-		line-height: 0.8rem;
+		line-height: 1rem;
 	}
 
 	.intro h3 {

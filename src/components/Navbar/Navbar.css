@@ -236,8 +236,8 @@
 /* iPhone large screen */
 @media (max-width: 480px) {
 	.navbar {
-		min-width: 100%;
-		overflow: visible!important;
+		margin-top: 8%;
+		overflow: hidden;
 	}
 
 	.name {
@@ -247,6 +247,10 @@
 	.sm-name {
 		display: inline;
 		min-height: 100%;
+	}
+
+	.sm-name p {
+		font-size: 3rem;
 	}
 
 	.envelope-cont {
@@ -317,5 +321,12 @@
 
 	.envelope:hover .letter {
 		transform: translateY(-25px);
+	} */
+}
+
+/* iPhone Reg Screen */
+@media (max-width: 375px) {
+	/* .sm-name p {
+		font-size: 3rem;
 	} */
 }
