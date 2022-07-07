@@ -273,7 +273,7 @@
 	}
 	
 	.intro {
-		top: 5%;
+		top: 6%;
 		right: 0;
 		min-width: 100%;
 		text-align: center;
@@ -293,7 +293,7 @@
 
 	.object-cont img {
 		max-width: 130%;
-		bottom: 15.5em;
+		bottom: 12.5em;
 		margin-top: 0;
 		left: -40%;
 	}
