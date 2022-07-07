@@ -93,11 +93,11 @@
   } 
 }
 
-/* PHONES */
+/* iPhone Large Screen */
 @media screen and (max-width: 480px) {
   .expertise {
     display: block;
-    height: 60vh;
+    max-height: 50vh;
     text-align: center;
     margin-top: 200px;
     width: 100%;
