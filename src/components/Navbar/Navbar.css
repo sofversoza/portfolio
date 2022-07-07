@@ -207,21 +207,33 @@
 	.sm-name p {
 		font-size: 6.5rem;
 	}
-
 }
 
+/* iPad 1-4, Mini and Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.navbar {
-		margin-top: 7%;
+		margin-top: 10%;
+	}
+
+	.envelope-cont {
+		display: none;
 	}
 
 	.name {
-		font-size: 7vw;
-		left: 7.5vw!important;
+		display: none;
+	}
+
+	.sm-name {
+		display: inline;
+		min-height: 100%;
+	}
+
+	.sm-name p {
+		font-size: 5rem;
 	}
 }
 
-/* PHONES */
+/* iPhone large screen */
 @media (max-width: 480px) {
 	.navbar {
 		min-width: 100%;
