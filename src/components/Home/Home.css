@@ -95,6 +95,10 @@
 	word-spacing: 0.6em;
 }
 
+.centered-intro {
+	display: none;
+}
+
 .intro h3 {
 	font-size: 1.26vw;
 	line-height: 1.2em;
@@ -153,14 +157,15 @@
 		height: 100vh;
 	}
 
+	.centered-intro {
+		display: flex;
+		justify-content: center;
+	}
+
 	.intro {
-		top: 6%;
-		right: 0;
-		left: 0;
+		top: -1%;
 		width: 100%;
-		text-align: center;
-		margin-right: auto;
-		margin-left: auto;
+		margin-left: 43%;
 	}
 
 	.intro h5 {
@@ -287,24 +292,29 @@
 	.home-cont {
 		margin-top: -5%;
 	}
+
+	.centered-intro {
+		display: flex;
+		justify-content: center;
+	}
 	
 	.intro {
-		top: 8%;
+		top: 1.5%;
 		right: 0;
 		min-width: 100%;
-		text-align: center;
 		margin-right: auto;
 		margin-left: auto;
 	}
 
 	.intro h5 {
-		font-size: 0.8em;
-		line-height: 1rem;
+		font-size: 0.6em;
+		line-height: 0.8rem;
 	}
 
 	.intro h3 {
-		font-size: 0.86em;
+		font-size: 0.657em;
 		line-height: 2em;
+		margin-top: 0;
 	}
 
 	.object-cont img {

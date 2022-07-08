@@ -40,11 +40,11 @@
 
 .featured h3 {
 	margin-top: 1%;
-  font-family: 'MonkegRegular', sans-serif;
-  -webkit-text-stroke: 1.1px rgb(254, 189, 200, 0.8);
-  color: white;
-  font-size: 4em;
-  letter-spacing: 1px;
+	font-family: 'MonkegRegular', sans-serif;
+  -webkit-text-stroke: 1px white;
+	color: transparent;
+  font-size: 4em!important;
+  letter-spacing: 0.1em;
   line-height: 1em;
 }
 
@@ -105,7 +105,7 @@
 	word-spacing: 0.1em;
 }
 
-																							/* MEDIA QUERIES */
+/* MEDIA QUERIES */
 /* iPad Pro 12.9" ( Portrait & Landscape ) */
 /* @media only screen 
   and (min-device-width: 1024px) 
@@ -151,12 +151,17 @@
 	}
 
 	.featured h3 {
-		font-size: 3em;
+		font-size: 2.55em!important;
 		overflow-y: hidden;
+	}
+
+	.featured p {
+		display: none;
 	}
 
 	.flex-cont {
 		margin: 5% 5%;
+		gap: 1.2em!important;
 	}
 
 	.card {

@@ -35,29 +35,29 @@
 	margin: 3% 0 0 5%;
 }
 
-.links-cont {
+.navlinks-cont {
 	z-index: 999;
 	position: absolute;
 	margin-left: 63.5%;
 }
 
-.links-cont ul {
+.navlinks-cont ul {
 	display: flex;
 	justify-content: space-between;
 	gap: 4vw;
 }
 
-.links-cont ul li {
+.navlinks-cont ul li {
 	list-style: none;
 }
 
-.links-cont ul li p {
+.navlinks-cont ul li p {
 	text-decoration: none;
 	font-size: 0.76vw;
 	cursor: pointer;
 }
 
-.links-cont ul li p:hover {
+.navlinks-cont ul li p:hover {
 	color: #ffc0cb; 
 }
 
@@ -81,7 +81,22 @@
 	}
 
 	.sm-name p {
-		font-size: 5rem;
+		font-size: 5.2rem;
+	}
+
+	.navlinks-cont {
+		margin-left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.navlinks-cont ul li p {
+		font-size: 2vw;
+	}
+
+	.navlinks-cont ul {
+		gap: 5.5vw;
 	}
 
 	.svg-logo {
@@ -130,87 +145,32 @@
 	}
 
 	.sm-name p {
-		font-size: 3.2rem;
+		font-size: 3rem;
 		padding: 10px 20px;
+	}
+
+	.navlinks-cont {
+		margin-left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.navlinks-cont ul li p {
+		font-size: 2.3vw;
+	}
+
+	.navlinks-cont ul {
+		gap: 5vw;
 	}
 
 	.svg-logo {
 		display: none;
 	}
-
-	/* .envelope-cont {
-		right: 8%;
-		top: 5%;
-		width: fit-content;
-		height: fit-content;
-		z-index: 50!important;
-	}
-
-	.back {
-		width: 65px;
-	  height: 45px;
-	}
-	
-	.letter {
-		width: 55px;
-		height: 37px;
-	}
-
-	.text1 {
-		font-size: 7px;
-	}
-
-	.text1 span {
-		font-size: 9.5px;
-	}
-
-	.text2 {
-		font-size: 7.3px;
-	}
-
-	.text3 {
-		font-size: 8px;
-	}
-
-	.front {
-		border-right: 33px solid #EFB8C2;
-		border-top: 22.5px solid transparent;
-		border-bottom: 22.5px solid transparent;
-		left: 32px;
-	}
-
-	.front:before {
-		border-left: 33px solid #EFB8C2;
-		border-top: 22.5px solid transparent;
-		border-bottom: 22.5px solid transparent;
-		top: -22.5px;
-	  left: -32px;
-	}
-
-	.front:after {
-		border-left: 33px solid #EFB8C2;
-		border-bottom: 25px solid #F1C1CA;
-		border-right: 32px solid transparent;
-		left: -32px;
-	}
-
-	.top {
-		border-top: 33px solid #EFADB9;
-		border-left: 33px solid transparent;
-		border-right: 32px solid transparent;
-	}
-
-	.envelope:hover .letter {
-		transform: translateY(-25px);
-	} */
 }
 
 /* iPhone Reg Screen */
 @media (max-width: 375px) {
-	/* .sm-name p {
-		font-size: 3rem;
-	} */
-
 	.svg-logo {
 		display: none;
 	}

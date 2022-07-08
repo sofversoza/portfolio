@@ -1,78 +1,71 @@
 .expertise-cont {
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
   overflow: hidden;
 }
 
 .expertise {
-  min-width: 90%;
-  text-align: center;
-  padding: 5px;
+  padding: 10%;
 }
 
-.expertise h1 {
+.titleText h1 {
   font-family: 'MonkegRegular', sans-serif;
-}
-
-.titleText {
-  font-family: 'MonkegRegular', sans-serif;
-  -webkit-text-stroke: 1.1px rgb(254, 189, 200, 0.8);
-  color: white;
-  font-size: 2.1em!important;
-  letter-spacing: 0.4em;
+  -webkit-text-stroke: 1px white;
+  font-size: 4.5em!important;
+  letter-spacing: 0.1em;
   line-height: 0 1em;
+  color: transparent;
 }
 
 .text h2 {
   font-size: 1.5em!important;
-  line-height: 1.3em;
+  line-height: 1.5em;
   cursor: default;
 } 
 
 .expertiselist1 {
   letter-spacing: 1em;
-  word-spacing: 1.5em;
-  margin-left: 0.5em;
-}
-
-.expertiselist2 {
-  letter-spacing: 0.55em;
   word-spacing: 1em;
 }
 
+.expertiselist2 {
+  letter-spacing: 0.63em;
+  word-spacing: 1.5em;
+}
+
 .expertiselist3 {
-  letter-spacing: 0.85em;
-  word-spacing: 1.45em;
-  margin-left: 0.3em;
+  letter-spacing: 1.2em;
+  word-spacing: 1.55em;
 }
 
 .expertiselist4 {
-  letter-spacing: 0.8em;
+  letter-spacing: 0.235em;
   word-spacing: 0.5em;
-  margin-left: 0.1em;
 }
 
 .expertiselist5 {
-  letter-spacing: 0.4em;
-  word-spacing: 0.71em;
-  margin-left: -0.2em;
+  letter-spacing: 0.7em;
+  word-spacing: 1.2em;
 }
 
 .expertiselist6 {
-  letter-spacing: 0.655em;
-  word-spacing: 0.8em;
-  /* margin-left: -0.18em; */
+  letter-spacing: 0.75em;
+  word-spacing: 2.15em;
 }
 
 .expertiselist7 {
-  letter-spacing: 0.7em;
+  letter-spacing: 0.315em;
   word-spacing: 1.1em;
-  margin-left: 0.2em;
 }
 
-                                            /* MEDIA QUERIES */
+.expertiselist8 {
+  letter-spacing: 0.59em;
+  word-spacing: 1.1em;
+}
+
+/* MEDIA QUERIES */
 /* iPad Pro 12.9" ( Portrait & Landscape ) */
 @media only screen 
   and (min-device-width: 1024px) 
@@ -96,11 +89,9 @@
 /* iPhone Large Screen */
 @media screen and (max-width: 480px) {
   .expertise {
-    display: block;
+    max-width: 100%;
     height: 50%;
-    margin-top: -10em;
-    text-align: center;
-    width: 100%;
+    margin-top: -4em;
   }
 
   .expertise-cont {
@@ -110,12 +101,13 @@
   }
 
   .titleText h1 {
-    font-size: clamp(2.5rem, 4vw + 1rem, 4rem)!important;
-    letter-spacing: 0.2em;
+    font-size: 1.3em!important;
+    letter-spacing: 0.05em;
   }
 
-  .text {
+  .text h2 {
     margin-top: 15px;
     font-size: 0.65rem!important;
+    line-height: 1.2em;
   }
 }
