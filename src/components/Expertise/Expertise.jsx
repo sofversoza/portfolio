@@ -56,7 +56,7 @@ function Expertise() {
 	}
 
 	return (
-		<div ref={ref} className='expertise-cont expertise'>
+		<div ref={ref} className='expertise-cont'>
 			<div ref={ref} className='expertise'>
 				<motion.div className='titleText' variants={titleText} initial='hidden' animate={animate}>
 					<h1>EXPERTISE</h1>
