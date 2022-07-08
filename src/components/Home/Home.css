@@ -48,6 +48,28 @@
 	}
 }
 
+.intro1 {
+	position: absolute;
+	margin-left: 63%;
+	margin-top: 15%;
+}
+
+.intro1 h5 {
+	font-size: 1.15vw;
+	line-height: 1.1em;
+	/* outline: 1px solid red; */
+}
+
+.intro1 h3 {
+	font-size: 1.26vw;
+	line-height: 1.2em;
+	color: #4351B8;
+	overflow: visible!important;
+	letter-spacing: 0.11em;
+	word-spacing: 0.6em;
+	margin-top: 5%;
+}
+
 .intro {
 	position: absolute;
 	margin-left: 63%;
@@ -163,16 +185,20 @@
 	}
 
 	.intro {
+		display: none;
+	}
+
+	.intro1 {
 		top: -1%;
 		width: 100%;
 		margin-left: 43%;
 	}
 
-	.intro h5 {
+	.intro1 h5 {
 		font-size: 1.3em;
 	}
 
-	.intro h3 {
+	.intro1 h3 {
 		margin-top: 1%;
 		font-size: 1.4em;
 		line-height: 1.5rem;
@@ -297,21 +323,23 @@
 		display: flex;
 		justify-content: center;
 	}
-	
+
 	.intro {
+		display: none;
+	}
+	
+	.intro1 {
 		top: 1%;
-		right: 0;
-		min-width: 100%;
-		margin-right: auto;
-		margin-left: auto;
+		width: 100%;
+		margin-left: 31%;
 	}
 
-	.intro h5 {
+	.intro1 h5 {
 		font-size: 0.6em;
 		line-height: 0.8rem;
 	}
 
-	.intro h3 {
+	.intro1 h3 {
 		font-size: 0.657em;
 		line-height: 2em;
 		margin-top: -1%;

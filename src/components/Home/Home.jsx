@@ -138,9 +138,9 @@ function Home() {
 					></motion.div>
 				</div>
 				<div className='centered-intro'>
-					<motion.div className='intro' variants={introVariant} initial='hidden' animate={animate}>
+					<motion.div className='intro1' variants={introVariant} initial='hidden' animate={animate}>
 						<h5 className='about1'>HELLO I'M SOFIA. GREAT SEEING YOU HERE</h5>
-						<br />
+						{/* <br /> */}
 						<h5 className='about2'>I'M A UI/UX PRODUCT DESIGNER & A</h5>
 						<h5 className='about3'>SOFTWARE ENGINEER WITH A FOCUS</h5>
 						<h5 className='about4'>ON FRONTEND WEB DEVELOPMENT</h5>
@@ -159,6 +159,26 @@ function Home() {
 						</h3>
 					</motion.div>
 				</div>
+				<motion.div className='intro' variants={introVariant} initial='hidden' animate={animate}>
+					<h5 className='about1'>HELLO I'M SOFIA. GREAT SEEING YOU HERE</h5>
+					{/* <br /> */}
+					<h5 className='about2'>I'M A UI/UX PRODUCT DESIGNER & A</h5>
+					<h5 className='about3'>SOFTWARE ENGINEER WITH A FOCUS</h5>
+					<h5 className='about4'>ON FRONTEND WEB DEVELOPMENT</h5>
+					<h5 className='about5'>I'M A FULLTIME CREATIVE & PASSIONATE ABOUT</h5>
+					<h5 className='about6'>THE SMALL DETAILS BOTH IN MY LIFE & WORK</h5>
+					<br />
+					<h5 className='about7'>BORN IN MANILA — BASED IN PHOENIX</h5>
+					<br />
+					<h3>
+						<BsGlobe
+							style={{ verticalAlign: 'top', fill: '#4351B8' }}
+							size='1.3em'
+							className='globe'
+						/>
+						&nbsp;AVAILABLE FOR REMOTE PROJECTS
+					</h3>
+				</motion.div>
 				<div className='marquee-cont'>
 					<motion.div
 						className='marquee'
