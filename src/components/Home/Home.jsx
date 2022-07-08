@@ -85,6 +85,27 @@ function Home() {
 		},
 	}
 
+	const svgVariant = {
+		hidden: { rotate: -180, opacity: 0 },
+		visible: {
+			opacity: 1,
+			rotate: 0,
+			transition: { duration: 2, delay: 1.5 },
+		},
+	}
+
+	const pathVariant = {
+		hidden: {
+			opacity: 0,
+			pathLength: 0,
+		},
+		visible: {
+			opacity: 1,
+			pathLength: 1,
+			transition: { duration: 3, delay: 1.5, yoyo: Infinity },
+		},
+	}
+
 	return (
 		<>
 			<Navbar />
@@ -98,12 +119,6 @@ function Home() {
 						animate={animate}
 					/>
 				</div>
-				<motion.div
-					className='luminaire'
-					variants={lumiVariant}
-					initial='hidden'
-					animate={animate}
-				></motion.div>
 				<div className='statue-cont'>
 					<motion.img
 						src={statue}
@@ -114,17 +129,24 @@ function Home() {
 						animate={animate}
 					/>
 				</div>
-				<motion.div
-					className='intro'
-					variants={introVariant}
-					initial='hidden'
-					animate={animate}
-				>
-					<h5 className='about1'>I'M SOFIA. NICE TO SEE YOU HERE</h5>
-					<h5 className='about2'>I'M A WEB & PRODUCT DESIGNER</h5>
-					<h5 className='about3'>FULL STACK SOFTWARE ENGINEER</h5>
-					<h5 className='about4'>AND A FULL TIME CREATIVE</h5>
-					<h5 className='about5'>BORN IN MNL — BASED IN PHX</h5>
+				<div className='lumi-cont'>
+					<motion.div
+						className='luminaire'
+						variants={lumiVariant}
+						initial='hidden'
+						animate={animate}
+					></motion.div>
+				</div>
+				<motion.div className='intro' variants={introVariant} initial='hidden' animate={animate}>
+					<h5 className='about1'>HELLO I'M SOFIA. GREAT SEEING YOU HERE</h5>
+					<br />
+					<h5 className='about2'>I'M A UI/UX PRODUCT DESIGNER & A</h5>
+					<h5 className='about3'>SOFTWARE ENGINEER WITH A FOCUS</h5>
+					<h5 className='about4'>ON FRONTEND WEB DEVELOPMENT</h5>
+					<h5 className='about5'>I'M A FULLTIME CREATIVE & PASSIONATE ABOUT</h5>
+					<h5 className='about6'>THE SMALL DETAILS BOTH IN MY LIFE & WORK</h5>
+					<br />
+					<h5 className='about7'>BORN IN MANILA — BASED IN PHOENIX</h5>
 					<br />
 					<h3>
 						<BsGlobe
@@ -132,7 +154,7 @@ function Home() {
 							size='1.3em'
 							className='globe'
 						/>
-						&nbsp;AVAILABLE FOR REMOTE WORK
+						&nbsp;AVAILABLE FOR REMOTE PROJECTS
 					</h3>
 				</motion.div>
 				<div className='marquee-cont'>
@@ -143,11 +165,11 @@ function Home() {
 						animate={animate}
 					>
 						<Marquee speed={80} gradient={false}>
-							<span>&nbsp;Full-Stack Development</span>
-							<span>&nbsp;Front-End Development</span>
-							<span>&nbsp;Web Design</span>
-							<span>&nbsp;Art Direction</span>
-							<span>&nbsp;Concept & Curation</span>
+							<span>&nbsp;SOFTWARE ENGINEER</span>
+							<span>&nbsp;FRONTEND DEVELOPMENT</span>
+							<span>&nbsp;UI/UX & PRODUCT DESIGN</span>
+							<span>&nbsp;ART DIRECTION</span>
+							<span>&nbsp;CONCEPT & CURATION</span>
 						</Marquee>
 					</motion.div>
 				</div>

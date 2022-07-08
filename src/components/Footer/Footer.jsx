@@ -7,12 +7,7 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import { Link } from 'react-scroll'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import {
-	Link as LinkRouter,
-	useNavigate,
-	Routes,
-	Route,
-} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Footer() {
 	const navigate = useNavigate()
@@ -71,7 +66,7 @@ function Footer() {
 	}
 
 	return (
-		<div className='footer'>
+		<div className='footer links'>
 			<div ref={ref} className='marquee-work-cont'>
 				<motion.div
 					className='marquee-work'
@@ -85,20 +80,12 @@ function Footer() {
 					</Marquee>
 				</motion.div>
 			</div>
-			<motion.div
-				className='idea'
-				variants={ideaVariant}
-				initial='hidden'
-				animate={animate}
-			>
+			<motion.div className='idea' variants={ideaVariant} initial='hidden' animate={animate}>
 				<h2>HAVE AN IDEA?</h2>
 				<h3 onClick={() => navigate('/form')}>
 					HIRE ME
 					<motion.div whileHover={{ x: 10 }} className='arrowdiv'>
-						<MdOutlineArrowForwardIos
-							size='1em'
-							style={{ verticalAlign: 'top' }}
-						/>
+						<MdOutlineArrowForwardIos size='1em' style={{ verticalAlign: 'top' }} />
 					</motion.div>
 				</h3>
 			</motion.div>
@@ -127,10 +114,7 @@ function Footer() {
 				</motion.ul>
 			</div>
 			<div className='bottom-info-flex'>
-				<motion.h3
-					className='copyright'
-					whileHover={{ color: 'rgb(254, 189, 200, 0.7)' }}
-				>
+				<motion.h3 className='copyright' whileHover={{ color: 'rgb(254, 189, 200, 0.7)' }}>
 					<span>©</span> SOFIA VERSOZA — 2022
 				</motion.h3>
 				<Link to='home' smooth={true} duration={1000}>

@@ -64,7 +64,7 @@ function Projects() {
 	}
 
 	return (
-		<div ref={ref} className='projects-cont'>
+		<div ref={ref} className='projects-cont projects'>
 			<div className='marquee-projects-cont'>
 				<motion.div
 					className='marquee-project'

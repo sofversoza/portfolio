@@ -6,7 +6,6 @@
 .sm-name {
 	display: none;
 }
-
 .sm-name p {
 	font-family: 'MonkegRegular', sans-serif;
 	font-size: 2.5rem;
@@ -18,171 +17,51 @@
 	overflow: visible!important;
 }
 
+.logo-cont {
+	display: flex;
+	justify-content: space-between;
+}
 
-/* NAME | LOGO */
 .name {
 	color: white;
 	font-family: 'MonkegRegular', sans-serif;
-	font-size: clamp(2.5rem, 3.5vw + 1rem, 4rem);
+	font-size: 4vw;
+	padding: 3.8vw 5vw 0 0;
+	order: 2;
+}
+
+.svg-logo {
+	height: 8vw;
+	margin: 3% 0 0 5%;
+}
+
+.links-cont {
+	z-index: 999;
+	position: absolute;
+	margin-left: 63.5%;
+}
+
+.links-cont ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 4vw;
+}
+
+.links-cont ul li {
+	list-style: none;
+}
+
+.links-cont ul li p {
+	text-decoration: none;
+	font-size: 0.76vw;
 	cursor: pointer;
-	position: absolute;
-	left: 5.5vw!important;
-	/* transition: 2s ease; */
-	margin-top: -4px!important;
-	padding-top: 3vw;
 }
 
-/* Giving shapes to names using clip-path*/
-.name1 { 
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 0, 0 100%); 
-} 
-.name2 { 
-	clip-path: polygon(0 100%, 50% 0, 100% 100%, 100% 100%, 0 100%); 
-} 
-
-/* transforming boxes position on hover */     
-.name-cont:hover .name1 { 
-	transform: translateY(-10px); 
-}     
-.name-cont:hover .name2 { 
-	transform: translateY(10px); 
-} 
-
-/* ENVELOPE */
-.envelope-cont {
-	/* position: fixed!important;
-	right: 4%;
-	top: 5.7%;
-	z-index: 2!important;
-	cursor: grab!important;
-	overflow: visible!important; */
-	display: none;
+.links-cont ul li p:hover {
+	color: #ffc0cb; 
 }
 
-.envelope {
-	position: relative;
-	cursor: pointer;
-	border: 1px solid #fff;
-	border-radius: 3%;
-	background-color: white;
-	overflow: visible!important;
-}
-
-.back {
-	position: relative;
-	width: 90px;
-	height: 65px;
-	background-color: #F7DBE1;
-}
-
-.letter {
-	position: absolute;
-	background-color: #fff;
-	width: 80px;
-	height: 57px;
-	top: 4px;
-	left: 5px;
-	transition: .2s;
-}
-
-.text1 {
-	text-align: center;
-	font-size: 12px;
-	font-family: arial;
-	margin-top: 4px;
-	font-weight: bold;
-	color: #46322E;
-	letter-spacing: -0.5px;
-}
-
-.text1 span {
-	text-align: center;
-	font-size: 18px;
-	font-family: arial;
-	color: rgb(122, 20, 20);
-}
-
-.text2 {
-	text-align: center;
-	font-size: 10px;
-	font-family: arial;
-	font-weight: bold;
-	color: #46322E;
-	letter-spacing: -0.5px;
-}
-
-.text3 {
-	text-align: center;
-	font-size: 14px;
-	font-family: arial;
-	font-weight: bold;
-	color: #46322E;
-	letter-spacing: -0.5px;
-	margin-right: 2px;
-}
-
-.front {
-	position: absolute;
-	border-right: 45.5px solid #EFB8C2;
-	border-top: 32.5px solid transparent;
-	border-bottom: 32.5px solid transparent;
-	height: 0;
-	width: 0;
-	top: 0;
-	left: 44.5px;
-	z-index: 3;
-	overflow: visible!important;
-}
-
-.front:before {
-	content:"";
-	position: absolute;
-	border-left: 45.5px solid #EFB8C2;
-	border-top: 32.5px solid transparent;
-	border-bottom: 32.5px solid transparent;
-	height: 0;
-	width: 0;
-	top: -32.5px;
-	left: -44.5px;
-}
-
-.front:after {
-	content:"";
-	position: absolute;
-	border-bottom: 35px solid #F1C1CA;
-	border-left: 45px solid transparent;
-	border-right: 45px solid transparent;
-	height: 0;
-	width: 0;
-	top: -2.5px;
-	left: -44.5px;
-	overflow: visible!important;
-}
-
-.top {
-	position: absolute;
-	border-top: 45px solid #EFADB9;
-	border-left: 45px solid transparent;
-	border-right: 45px solid transparent;
-	height: 0;
-	width: 0;
-	top: 0;
-	transform-origin: top;
-	transition: .3s;
-	z-index: 3;
-}
-
-.envelope:hover .top {
-	transform: rotateX(160deg);
-	z-index: 0;
-}
-
-.envelope:hover .letter {
-	transform: translateY(-38px);
-	z-index: 3;
-}
-
-																						/* MEDIA QUERIES */
+/* MEDIA QUERIES */
 /* iPad Pro 12.9" ( Portrait & Landscape ) */
 @media only screen 
   and (min-device-width: 1024px) 
@@ -190,10 +69,6 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 	.navbar {
 		margin-top: 7%;
-	}
-	
-	.envelope-cont {
-		display: none;
 	}
 
 	.name {
@@ -208,16 +83,16 @@
 	.sm-name p {
 		font-size: 5rem;
 	}
+
+	.svg-logo {
+		display: none;
+	}
 }
 
 /* iPad 1-4, Mini and Air, Pro 9.7" */
 @media screen and (max-width: 768px) {
 	.navbar {
 		margin-top: 7%;
-	}
-
-	.envelope-cont {
-		display: none;
 	}
 
 	.name {
@@ -231,6 +106,10 @@
 
 	.sm-name p {
 		font-size: 3.5rem;
+	}
+
+	.svg-logo {
+		display: none;
 	}
 }
 
@@ -255,7 +134,7 @@
 		padding: 10px 20px;
 	}
 
-	.envelope-cont {
+	.svg-logo {
 		display: none;
 	}
 
@@ -331,4 +210,8 @@
 	/* .sm-name p {
 		font-size: 3rem;
 	} */
+
+	.svg-logo {
+		display: none;
+	}
 }
