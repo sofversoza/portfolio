@@ -131,7 +131,7 @@
 /* iPhone large screen */
 @media (max-width: 480px) {
 	.navbar {
-		margin-top: 10%;
+		margin-top: 5%;
 		overflow: hidden;
 	}
 
@@ -158,6 +158,7 @@
 
 	.navlinks-cont ul li p {
 		font-size: 2.3vw;
+		color: pink;
 	}
 
 	.navlinks-cont ul {
