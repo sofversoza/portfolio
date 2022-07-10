@@ -189,9 +189,9 @@
 	}
 
 	.intro1 {
-		top: -5%;
+		top: -5.5%;
 		width: 100%;
-		margin-left: 43%;
+		margin-left: 45%;
 	}
 
 	.intro1 h5 {
@@ -199,7 +199,7 @@
 	}
 
 	.intro1 h3 {
-		margin-top: 1%;
+		margin-top: -0.2%;
 		font-size: 1.32em;
 		line-height: 1.5rem;
 	}
