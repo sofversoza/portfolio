@@ -68,7 +68,7 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	.navbar {
-		margin-top: 7%;
+		margin-top: 5%;
 	}
 
 	.name {
@@ -92,7 +92,7 @@
 	}
 
 	.navlinks-cont ul li p {
-		font-size: 2vw;
+		font-size: 1.75vw;
 	}
 
 	.navlinks-cont ul {
