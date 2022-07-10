@@ -175,7 +175,7 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	.home-cont {
-		margin-top: -5%;
+		margin-top: -2.5%;
 		height: 100vh;
 	}
 
@@ -189,7 +189,7 @@
 	}
 
 	.intro1 {
-		top: -3.5%;
+		top: -5%;
 		width: 100%;
 		margin-left: 43%;
 	}
