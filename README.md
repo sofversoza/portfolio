@@ -1,71 +1,38 @@
-# Getting Started with Create React App
+# `✦ Portfolio Site V1 ✦`
+[SOFIAVERSOZA.COM](https://www.sofiaversoza.com/) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<sup>VERSION 1  —  JULY 2022 ©</sup>
 
-## Available Scripts
+## HELLO, WELCOME TO MY FIRST PORTFOLIO SITE! 🪅 🪅 🪅
+I'm filled with excitement as I'm typing this. It's finally finished and I'm so proud of how it turned out! 
+This is by far the biggest project I've ever worked on and the one I'm most proud of. The whole process of building and designing my personal site
+was something I've been anticipating since boot camp days. Full creative freedom is the most enjoyable aspect of building web applications for me, and I 
+definitely took advantage of that here. I wanted my Portfolio to portray my aesthetics and what I'm interested in the real world. 
+And I can proudly say that I've met my main and only goal for this project and I couldn't be happier with how it came out! ☻ ☺︎ 
 
-In the project directory, you can run:
+🗣 *This project will definitely always be a work in progress. As I acquire new skills & as my interests grow &/or change — I'll be updating 
+anything that doesn't feel true to me and represent me as a person & as a designer.*
 
-### `npm start`
+<sup> *`Home page — Screenshot`* </sup>
+<img width="1727" alt="display" src="https://user-images.githubusercontent.com/92960864/178626225-bc1ca8bf-1f60-488b-978a-86d3c0689026.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<sub> *`Home page — Recording`* </sub>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://user-images.githubusercontent.com/92960864/178628257-9e85dc27-39e8-470b-ae17-f7edfbaa3225.mov
 
-### `npm test`
+I learned how to create my own ***SVG*** then use it alongside ***Framer Motion*** to achive the animation on my logo *(as shown in above's video)* 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# portfolio
+## `TECHNOLOGIES USED 🖇 💻 🦾`
+- React
+- React Router
+- CSS
+- Figma
+- EmailJS
+- Framer Motion
+- Netlify
+- Adobe Photoshop & Fonts
+- react-icons
+- react-scroll
+- react-fast-marquee
+- react-intersection-observer
